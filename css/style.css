@@ -288,15 +288,11 @@
     height: 50px;
     margin: auto 0;
 }
-select
-{
+.select-events{
+    height: 30px;
 border: none;
 cursor: pointer;
 width: 100px;
-
-}
-.select-events{
-    height: 30px;
 }
 option{
 // padding-left: 20px;
