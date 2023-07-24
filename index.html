@@ -10,130 +10,233 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
 <header class="header">
     <div class="container">
     <div class="header__inner">
-
         <a class="header__logo" href="index.html">
             <img class="header__img" src="images/logo.png" alt="logo">
         </a>
         <nav class="header__menu">
+
             <ul class="header__menu-list">
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Про компанію</a>
+                    <a class="header__menu-list-link" href="#">Про нас</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Інвесторам</a>
+                    <a class="header__menu-list-link" href="#">Продукт</a>
+                </li>
+                <li class="header__menu-list-item header__menu-list-item--more" href="#" easy-toggle="#drop-menu" easy-class="open" easy-rcoe>
+                    <a class="header__menu-list-link header__menu-list-link--more" >Застосування </a>
+                    <span class="sub-menu__arrow sub-menu__arrow-menu"></span>
+          
+                    <ul class="submenu__header-list" id="drop-menu">
+                        <li class="submenu__header-item">
+                            <a class="submenu__header-link" href="#">Віртуальні співробітники</a>
+                        </li>
+                        <li class="submenu__header-item">
+                            <a class="submenu__header-link" href="#">Чат-боти</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__menu-list-item">
                     <a class="header__menu-list-link" href="#">Розробникам</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Підтримка</a>
+                    <a class="header__menu-list-link" href="#">Ціни</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Новини</a>
-                </li>
-                <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Контакти</a>
+                    <div class="header__btn btn header__menu-list-item-btn">
+                        <div class="header__btn-inner">
+                        <div class="header__btn-item">
+                            <a class="btn-link" href="#">Тест драйв</a>
+                        </div>
+                        <div class="btn-content" easy-toggle="#btn-menu--mini" easy-class="open" easy-rcoe>
+                            <div class="btn-content-item" >
+                                <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+                            </div>
+                            <div class="btn-arrow"></div>
+            
+                            <ul class="submenu__btn" id="btn-menu--mini">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
+       
 
-
-        <div class="lang">
-            <select class="select-events">
-            <option value="1" class="icon-ua" selected>укр</option>
-            <option value="0" class="icon-eng">eng</option>
-            <option value="0" class="icon-ua">укр</option>
-            </select>
+        <div class="header__lang" easy-toggle="#lang-menu" easy-class="show" easy-rcoe>
+            <div class="header__lang-inner">
+            <div class="header__lang-images">
+                <img class="header__lang-img" src="images/icons/lang-ua.png" alt="ua">
+            </div>
+            <div class="sub-menu__arrow header__lang-arr"></div>
         </div>
-
-        <button class="header__btn">
-            Купити
-        </button>
+        <div class="lang-menu" id="lang-menu">
+            <div class="lang-menu__inner">
+                <div class="lang-menu__item-wrapper">
+                    <div class="lang-menu__item">
+                <div class="lang-menu__images">
+                    <img class="lang-menu__img" src="images/icons/lang-ua.png" alt="ua">
+                </div>
+                <div class="lang-menu__name">
+                    <a class="lang-menu__link" href="#">Україна</a>
+                </div>
+            </div>
+            </div>
+            <div class="lang-menu__item-wrapper">
+                <div class="lang-menu__item">
+            <div class="lang-menu__images">
+                <a class="lang-menu__link" href="#">
+                <img class="lang-menu__img" src="images/icons/lang-eng.png" alt="ua">
+            </a>
+            </div>
+            <div class="lang-menu__name">
+                <a class="lang-menu__link" href="#">США</a>
+            </div>
+        </div>
+        </div>
+        <div class="lang-menu__item-wrapper">
+            <div class="lang-menu__item">
+        <div class="lang-menu__images">
+            <a class="lang-menu__link" href="#">
+            <img class="lang-menu__img" src="images/icons/lang-canada.png" alt="ua">
+            </a>
+        </div>
+        <div class="lang-menu__name">
+            <a class="lang-menu__link" href="#">Канада</a>
+        </div>
+    </div>
+    </div>
+    <div class="lang-menu__item-wrapper">
+        <div class="lang-menu__item">
+    <div class="lang-menu__images">
+        <a class="lang-menu__link" href="#">
+        <img class="lang-menu__img" src="images/icons/lang-gb.png" alt="ua">
+        </a>
+    </div>
+    <div class="lang-menu__name">
+        <a class="lang-menu__link" href="#">Британія</a>
     </div>
 </div>
+</div>
+<div class="lang-menu__item-wrapper">
+    <div class="lang-menu__item">
+<div class="lang-menu__images">
+    <a class="lang-menu__link" href="#">
+    <img class="lang-menu__img" src="images/icons/lang-aus.png" alt="ua">
+    </a>
+</div>
+<div class="lang-menu__name">
+    <a class="lang-menu__link" href="#">Австралія</a>
+</div>
+</div>
+</div>
+        </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="header__btn btn">
+        <div class="header__btn-inner">
+        <div class="header__btn-item">
+            <a class="btn-link" href="#">Тест драйв</a>
+        </div>
+        <div class="btn-content" easy-toggle="#btn-menu" easy-class="open" easy-rcoe>
+            <div class="btn-content-item" >
+                <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+            </div>
+            <div class="btn-arrow"></div>
+
+            <ul class="submenu__btn" id="btn-menu">
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                    </a>
+                </li>
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                    </a>
+                </li>
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                    </a>
+                </li>
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                    </a>
+                </li>
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+        <div class="burger__wrapper" style="margin: auto 0;">
+            <button class="burger">
+                <span></span>
+              </button>
+            </div>
+
+        </div>
+    </div>
+
 </header>
-<section class="top">
+ <section class="top">
     <div class="container">
     <h1 class="top__title"><span class="top__title-center">Керований <span class="top__title-blue"> ШІ бізнес-асистент</span></span><span class="top__title-left">для підвищення продуктивності </span><span class="top__title-right">та виконання бекофісної рутини</span></h1>
 </div>
-<div class="container-min">
+<div class="container-min top__images">
     <img class="top__img" src="images/top.png" alt="top">
 </div>
 </section>
-<!-- <section class="assistant">
+
+<section class="assistant" id="section">
     <div class="container">
-        <h2 class="assistant__title">Персональний асистент</h2>
-        <p class="assistant__subtitle">BizAI — це розумне обслуговування клієнтів для всіх каналів зв’язку. Інтелектуальні чат-боти з онлайн-чатом і відео.</p>
-        <div class="assistant__wrapper">
-            <div class="assistant__item">
-                <div class="assistant__item-box">
-                    <img src="images/assistant/0.png" alt="chat">
-                    <img src="images/assistant/1.png" alt="chat">
-                </div>
-                <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Завдання</h4>
-                <p class="assistant__item-text">Чат-бот BizAI виконує завдання, описані у довільній формі</p>
-            </div>
-        </div>
-            <div class="assistant__item">
-                <div class="assistant__item-img">
-                <img src="images/assistant/4.png" alt="2">
-                </div>
-                <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Аналітика</h4>
-                <p class="assistant__item-text">Робить аналітику та звіти по запиту на людській мові</p>
-            </div>
-            </div>
-            <div class="assistant__item">
-                <div class="assistant__item-img">
-                <img src="images/assistant/5.png" alt="3">
-                </div>
-                <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Файли</h4>
-                <p class="assistant__item-text">Вміє працювати з файлами користувачів</p>
-        </div>
-            </div>
-            <div class="assistant__item">
-                <div class="assistant__item-img assistant__item-img--history">
-                <img src="images/assistant/2.png" alt="4">
-                </div>
-                <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Історія спілкування</h4>
-                <p class="assistant__item-text">Пам'ятає історію спілкування та контекст бізнесу</p>
-            </div>
-            </div>
-            <div class="assistant__item">
-                <div class="assistant__item-img">
-                <img src="images/assistant/3.png" alt="5">
-                </div>
-                <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Інструменти</h4>
-                <p class="assistant__item-text">Використовує різні програми як інструменти</p>
-            </div>
-            </div>
-            <div class="assistant__item">
-                <div class="assistant__item-img">
-                <img src="images/assistant/6.png" alt="6">
-                </div>
-                <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Бізнес-процесси</h4>
-                <p class="assistant__item-text">Виконує рутинні дії по бізнес-процесам</p>
-            </div>
-            </div>
-        </div>
-        </div>
-</section> -->
-<section class="assistant">
-    <div class="container">
-        <h2 class="assistant__title">Персональний асистент</h2>
-        <p class="assistant__subtitle">BizAI — це розумне обслуговування клієнтів для всіх каналів зв’язку. Інтелектуальні чат-боти з онлайн-чатом і відео.</p>
+        <h2 class="assistant__title">Продукт та рішення</h2>
+        <p class="assistant__subtitle">Відкрийте для свого бізнесу короткий шлях до цифрової трансформації!</p>
         <div class="assistant__wrapper">
             <div class="assistant__left">
             <div class="assistant__item assistant__item--big">
@@ -143,7 +246,7 @@
                 </div>
                 <div class="assistant__item-content">
                 <h4 class="assistant__item-title">Завдання</h4>
-                <p class="assistant__item-text">Чат-бот BizAI виконує завдання, описані у довільній формі</p>
+                <p class="assistant__item-text">BizAI - ваш надійний асистент, який спілкується людською мовою та надає необхідну інформацію, виконує завдання та складні операції </p>
             </div>
         </div>
         <div class="assistant__bottom">
@@ -152,8 +255,8 @@
                 <img src="images/assistant/2.png" alt="2">
                 </div>
                 <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Аналітика</h4>
-                <p class="assistant__item-text">Робить аналітику та звіти по запиту на людській мові</p>
+                <h4 class="assistant__item-title">Пам’ять та контекст</h4>
+                <p class="assistant__item-text">BizAI має довгострокову та короткострок<span id="dots-1">...</span><span class="more-text" id="more-1">ову та короткострокову контекстну пам'ять, що формується з історії завдань, спілкування та обробленої інформації (файлів та баз даних). Це забезпечує самонавчання та постійну актуальність, краще розуміння запитів та адекватність відповідей.</span><span class="more-text-btn" id="btn-1" onclick="readMore_1()">подивитись все</span></p>
             </div>
             </div>
             <div class="assistant__item assistant__item--min">
@@ -161,8 +264,8 @@
                 <img src="images/assistant/3.png" alt="3">
                 </div>
                 <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Файли</h4>
-                <p class="assistant__item-text">Вміє працювати з файлами користувачів</p>
+                <h4 class="assistant__item-title">Інтеграції</h4>
+                <p class="assistant__item-text">BizAI поєднує спеціалізовані додатки в цілісні процеси</p>
         </div>
     </div>
             </div>
@@ -174,8 +277,8 @@
                 <img src="images/assistant/4.png" alt="4">
                 </div>
                 <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Історія спілкування</h4>
-                <p class="assistant__item-text">Пам'ятає історію спілкування та контекст бізнесу</p>
+                <h4 class="assistant__item-title">Аналітика</h4>
+                <p class="assistant__item-text">По запиту готує аналіз даних, та видає як текстом, так і графічно</p>
             </div>
             </div>
             <div class="assistant__item assistant__item--min">
@@ -183,8 +286,8 @@
                 <img src="images/assistant/5.png" alt="5">
                 </div>
                 <div class="assistant__item-content">
-                <h4 class="assistant__item-title">Інструменти</h4>
-                <p class="assistant__item-text">Використовує різні програми як інструменти</p>
+                <h4 class="assistant__item-title">Файли, база данних</h4>
+                <p class="assistant__item-text">BizAI здатний обробляти дані з різних типів файлів</p>
             </div>
             </div>
         </div>
@@ -194,15 +297,48 @@
                 </div>
                 <div class="assistant__item-content">
                 <h4 class="assistant__item-title">Бізнес-процесси</h4>
-                <p class="assistant__item-text">Виконує рутинні дії по бізнес-процесам</p>
+                <p class="assistant__item-text">BizAI - це інтелектуальний помічник, який описує бізнес-процеси вашої компанії в діалозі, аналізує їх і максимально ефектив<span id="dots">...</span><span class="more-text" id="more">но автоматизує. Він також займає проактивну позицію, допомагаючи вам удосконалити їх та реалізувати потенціал.</span><span class="more-text-btn" id="btn" onclick="readMore()">подивитись все</span></p>
+           
             </div>
         </div>
             </div>
         </div>
         </div>
+</section> 
+
+<div class="container-min">
+<section class="security">
+    <div class="security__wrapper">
+    <div class="security__inner">
+        <h4 class="security__title">Безпека</h4>
+            <div class="security__content">
+                <div class="security__item">
+                <p class="security__item-text">Доступно розгортання моделей ШІ та БД на власних серверах</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">Регулярні зовнішні перевірки безпеки</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">До загальних
+                    моделей передається знеособлена інформація</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">Інформація клієнтів не змішується</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">При відключенні вся інформація та контекст повністю видаляються</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">Чутлива інформація в захищеному сховищі</p>
+            </div>
+        </div>
+    </div>
+    <div class="security__images">
+        <img class="security__img" src="images/security-bg.png" alt="security img">
+    </div>
+</div>
 </section>
-
-
+</div>
 
 <section class="introduction">
     <div class="container">
@@ -225,12 +361,671 @@
     </div>
 </section>
 
+<div class="container-min">
+    <section class="employee">
+        <div class="employee-bg">
+    <div class="employee-wrapper">
 
-
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="'js/jquery.fancybox.min.js',"></script>
-<script src="js/main.js"></script>
+    <h2 class="employee__title">Віртуальні співробітники</h2>
+    <div class="employee__inner">
+        <ul class="employee__left">
+            <li class="employee__item employee__item-1">Ососбистий помічник</li>
+            <li class="employee__item employee__item-2">Продавець</li>
+            <li class="employee__item employee__item-3">Юрист</li>
+            <li class="employee__item employee__item-4">Бухгалтер</li>
+        </ul>
+        <ul class="employee__right">
+            <li class="employee__item employee__item-5">Фінансист</li>
+            <li class="employee__item employee__item-6">Маркетолог</li>
+            <li class="employee__item employee__item-7">Постачальник</li>
+            <li class="employee__item employee__item-8">Менеджер проєктів</li>
+        </ul>
+    </div>
 </div>
+</div>
+</section>
+</div>
+
+<section class="benefits">
+    <div class="container">
+        <h2 class="benefits__title">Чат-боти — представники компанії</h2>
+        <p class="benefits__subtitle" style=" padding-bottom: 20px;">На відміну від існуючих підходів чат-боти не обмежені заздалегідь запланованим маршрутом діалогу, а природньо реагують на реплики співрозовників.</p>
+        <p class="benefits__subtitle"> Вони проактивні і використовують діалоги та специфічні навички для виконання своєї рольової задачі. Вміють працювати в будь якому популярному месенджері, на маркетплейсах та соцмережах, створюючи єдину точку для коммунікації.</p>
+        <div class="benefits__wrapper">
+            <div class="benefits__item">
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Продавець</h4>
+                <p class="benefits__item-text">
+                    Відповідає на питання про компанію та продукцію/послуги, рекомендує та формує замовлення. Відмінність від стандартних чат-ботів в підході: намагається з'ясувати внутрішні потреби покупця в діалозі та робити ціннісну пропозицію, продаючи як молодший продавець, але постійно навчаючись.
+                </p>
+                </div>
+                <div class="benefits__item-images">
+                <img class="benefits__item-img" src="images/benefits_1.png" alt="chat">
+            </div>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-images" style="padding: 60px 78px;">
+                <img class="benefits__item-img" src="images/benefits_2.png" alt="chat">
+                </div>
+            <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Підтримка</h4>
+                <p class="benefits__item-text">
+                    BizAI бере на себе всі завдання першої лінії підтримки. Він вміє відповідати на запитання відповідно до контексту вашої компанії, приймати запити та надсилати сповіщення про зміни статусів.
+                </p>
+            </div>
+        </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Рекрутер</h4>
+                <p class="benefits__item-text">
+                    Допомагає рекрутерам швидко та ефективно обробляти заявки від кандидатів і забезпечує зручну комунікацію з ними. BizAI виконує попередню оцінку кандидатів, аналізуючи їх профіль та резюме та швидко відбираючи найкращих кандидатів для подальшого розгляду.
+                </p>
+                </div>
+                <div class="benefits__item-images" style="padding: 67px 60px;">
+                    <img class="benefits__item-img" src="images/benefits_3.png" alt="chat">
+                </div>
+            </div>
+          
+           
+            <div class="benefits__item">
+                <div class="benefits__item-images" style="padding: 53px 60px;">
+                    <img class="benefits__item-img" src="images/benefits_4.png" alt="chat">
+                </div>
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Закупівля</h4>
+                <p class="benefits__item-text">
+                    Забезпечує спілкування з постачальниками, як з існуючими, так і потенційними. Приймає пропозиції, щоб вони не попадали у спам, повідомляє про потреби, забезпечує документообіг
+                </p>
+            </div>
+        </div>
+    
+            <div class="benefits__item">
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Для інвесторів</h4>
+                <p class="benefits__item-text">
+                    Відповідає за спілкування з інвесторами, як поточними так і перспективними. Надає їм інформацію по запиту з різним рівнем доступу, виконуючи одразу функцію аналітика, що працює з "віртуальною кімнатою даних". Також періодично інформує інвесторів про події з життя компанії.
+                </p>
+            </div>
+            <div class="benefits__item-images">
+                <img class="benefits__item-img" src="images/benefits_5.png" alt="chat">
+            </div>
+            </div>
+        </div>
+</div>
+</section>
+
+<section class="tariffs">
+    <div class="container">
+        <h2 class="tariffs__title">Тарифи</h2>
+        <p class="tariffs__subtitle">Наш безкоштовний план чат-боту для початківців чудово підходить для того, щоб спробувати BizAI. Придбайте платний план чат-боту, щоб отримати додаткові функції</p>
+        <div class="tariffs__tariff">
+            <p class="tariffs__tariff-span">Помісячно</p>
+            <label class="switch">
+                <input class="switch__input" type="checkbox">
+                <span class="switch__slider" checked></span>
+            </label>
+            <div class="tariffs__tariff-box">
+            <p class="tariffs__tariff-text">Оплата за рік</p>
+            <div class="tariffs__tariff-promotion">знижка 10%</div>
+        </div>
+        </div>
+        <div class="tariffs__inner">
+            <div class="tariffs__item">
+                <div class="tariffs__item-content tariffs__item-content-1">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-1.png" alt="tariffs-1">
+                </div>
+                <h6 class="tariffs__item-title">Початковий</h6>
+                <p class="tariffs__item-text">
+                    Почати роботу з базовими функціями
+                </p>
+                <div class="tariffs__item-price"><span class="tariffs__item-price-num">$0</span>/безкоштовно
+        
+                </div>
+                <button class="tariffs__item-btn">Спробувати</button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">Які особливості включає?</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Обмежена кількість запитів на місяць</li>
+                        <li class="tariffs__item-info-item">3 підключених інструменти з базових, 30 взаємодій/місяць</li>
+                        <li class="tariffs__item-info-item">Рівень спілкування та розуміння задач - GPT2</li>
+                        <li class="tariffs__item-info-item">1 користувач</li>
+                        <li class="tariffs__item-info-item">1 активний бізнес-процес</li>
+                    </ul>
+                    <a class="tariffs__item-info-more" href="#">Показати більше</a>
+                </div>
+            </div>
+
+            <div class="tariffs__item">
+                <div class="tariffs__item-content">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-2.png" alt="tariffs-2">
+                </div>
+                <h6 class="tariffs__item-title">Стандартний</h6>
+                <p class="tariffs__item-text">
+                    Чат-бот для великих команд та корпорацій
+                </p>
+                <div class="tariffs__item-price"><span class="tariffs__item-price-num">$30</span>/місяць
+                <br><p class="tariffs__item-price-info">$360/рік</p>
+                </div>
+                <button class="tariffs__item-btn">Спробувати</button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">Які особливості включає?</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Додаткові користувачі (20$/міс)</li>
+                        <li class="tariffs__item-info-item">Обсяг довгострокової пам'яті 500 Мб</li>
+                        <li class="tariffs__item-info-item">Рівень спілкування та розуміння задач - GPT3.5</li>
+                        <li class="tariffs__item-info-item">Підключення рольових пакетів (віртуальних співробітників)</li>
+                        <li class="tariffs__item-info-item">Тестовий період - 5 днів</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tariffs__item">
+                <div class="tariffs__item-content tariffs__item-content--active">
+                    <div class="tariffs__item-top">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-3.png" alt="tariffs-3">
+                </div>
+                <div class="tariffs__item-proposal">Найбільш популярний</div>
+            </div>
+                <h6 class="tariffs__item-title" >Про</h6>
+                <p class="tariffs__item-text">Чат-бот для вашого бізнесу</p>
+                <div class="tariffs__item-price" ><span class="tariffs__item-price-num">$50</span>/місяць
+                <br><p class="tariffs__item-price-info">$600/рік</p>
+                </div>
+                <button class="tariffs__item-btn">Спробувати</button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">Які особливості включає?</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Додаткові користувачі (40$/міс)</li>
+                        <li class="tariffs__item-info-item">Обсяг довгострокової пам'яті 1 Гб</li>
+                        <li class="tariffs__item-info-item">Рівень спілкування та розуміння задач - GPT4</li>
+                        <li class="tariffs__item-info-item">Керування набором навичок віртуальних співробітників</li>
+                        <li class="tariffs__item-info-item">Самоналагодження бізнес-процесів</li>
+                    </ul>
+                    <a class="tariffs__item-info-more" href="#">Показати більше</a>
+                    <!-- <ul class="tariffs__item-info-list--more" id="tariffs__item--more">
+                        <li class="tariffs__item-info-item">Додаткові користувачі (40$/міс)</li>
+                        <li class="tariffs__item-info-item">Обсяг довгострокової пам'яті 1 Гб</li>
+                    </ul>
+                    <button id="tariffs__item-btn" onclick="readMore()" class="tariffs__item-info-more" >Показати більше</button> -->
+                </div>
+            </div>
+
+            <div class="tariffs__item ">
+                <div class="tariffs__item-content">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-4.png" alt="tariffs-4">
+                </div>
+                <h6 class="tariffs__item-title">Корпоративний</h6>
+                <p class="tariffs__item-text">
+                    Для підприємств, яким потрібна додаткова підтримка і безпека
+                </p>
+                <div class="tariffs__item-connection">
+                    <div class="tariffs__item-connection-images">
+                        <img class="tariffs__item-connection-img" src="images/icons/connection.png" alt="connection">
+                    </div>
+                    <p class="tariffs__item-connection-text">/зв'яжіться з нами</p>
+                </div>
+                <button class="tariffs__item-btn tariffs__item-connection-btn">
+                    Зв'яжіться для оцінки
+                </button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">Зовнішні боти як сервіс</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Специфічні агенти</li>
+                        <li class="tariffs__item-info-item">Специфічні агенти</li>
+                        <li class="tariffs__item-info-item">Власні правила формування контексту</li>
+                        <li class="tariffs__item-info-item">Формування індивідуальної моделі ШІ</li>
+                        <li class="tariffs__item-info-item">Диверсифіковані бізнеси з різним контекстом</li>
+                    </ul>
+                    <a class="tariffs__item-info-more" href="#">Показати більше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="reviews">
+    <div class="container">
+    <div class="reviews__wrapper">
+        <h2 class="reviews__title">Відгуки</h2>
+        <p class="reviews__subtitle">Наш безкоштовний план чат-боту для початківців чудово підходить для того, щоб спробувати BizAI. Придбайте платний план чат-боту, щоб отримати додаткові функції</p>
+        <div class="reviews__inner">
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <p class="reviews__item-text">
+                    Він дійсно перевершив мої очікування. Завдяки цьому боту, ми змогли автоматизувати багато процесів в нашій компанії і значно збільшити ефективність роботи.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-1.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">iDeals</p>
+                        <p class="reviews__item-author-about">Провайдер віртуальних кімнат даних</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <p class="reviews__item-text">
+                    Чат-бот суттєво покращив робочий процес в нашій компанії, збільшивши продуктивність і знижуючи кількість помилок. Ми дуже задоволені результатами та рекомендуємо його.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-2.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">IT Craft</p>
+                        <p class="reviews__item-author-about">Розробка веб та мобільних додатків</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <p class="reviews__item-text">
+                    Цей чат-бот виявився надзвичайно корисним для нашої компанії, допомагаючи нам забезпечити ефективне вирішення проблем повсякденної рутиною.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-3.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">Aspire Global</p>
+                        <p class="reviews__item-author-about">Постачальник рішень для iGaming</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <p class="reviews__item-text">
+                    Він дійсно перевершив мої очікування. Завдяки цьому боту, ми змогли автоматизувати багато процесів в нашій компанії і значно збільшити ефективність роботи.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-1.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">iDeals</p>
+                        <p class="reviews__item-author-about">Провайдер віртуальних кімнат даних</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <p class="reviews__item-text">
+                    Чат-бот суттєво покращив робочий процес в нашій компанії, збільшивши продуктивність і знижуючи кількість помилок. Ми дуже задоволені результатами та рекомендуємо його.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-2.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">IT Craft</p>
+                        <p class="reviews__item-author-about">Розробка веб та мобільних додатків</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <p class="reviews__item-text">
+                    Цей чат-бот виявився надзвичайно корисним для нашої компанії, допомагаючи нам забезпечити ефективне вирішення проблем повсякденної рутиною.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-3.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">Aspire Global</p>
+                        <p class="reviews__item-author-about">Постачальник рішень для iGaming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="articles">
+    <div class="container">
+    <div class="articles__top">
+        <h2 class="articles__title">Новини та статті</h2>
+        <a class="articles__more" href="#">Подивитсь все</a>
+    </div>
+        <div class="articles__inner">
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">17 червня 2023</p>
+                <div class="articles__item-title">
+                <a class="articles__item-link" href="#">
+                    Покращення обслуговування клієнтів за допомогою інтелектуального віртуального...
+                </a>
+                </div>
+                <p class="articles__item-text">
+                Розробляючи наше рішення, ми в BizAI шукали технологію штучного інтелекту, яку...
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">16 червня 2023
+                </p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        Як використовувати чат-бот для комерційної нерухомості – вичерпний посібник
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Рішення розмовного штучного інтелекту для обслуговування клієнтів пройшли довгий...
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">15 червня 2023</p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        Як чат-боти розмовного штучного інтелекту допомагають бізнесу?
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Розмовний штучний інтелект для бізнесу змінив правила гри, зробивши революцію...
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">17 червня 2023</p>
+                <div class="articles__item-title">
+                <a class="articles__item-link" href="#">
+                    Покращення обслуговування клієнтів за допомогою інтелектуального віртуального...
+                </a>
+                </div>
+                <p class="articles__item-text">
+                Розробляючи наше рішення, ми в BizAI шукали технологію штучного інтелекту, яку...
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">16 червня 2023
+                </p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        Як використовувати чат-бот для комерційної нерухомості – вичерпний посібник
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Рішення розмовного штучного інтелекту для обслуговування клієнтів пройшли довгий...
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">15 червня 2023</p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        Як чат-боти розмовного штучного інтелекту допомагають бізнесу?
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Розмовний штучний інтелект для бізнесу змінив правила гри, зробивши революцію...
+                </p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<div class="container">
+<footer class="footer">
+ 
+        <div class="footer__wrapper">
+        <h2 class="footer__title">BizAI  - постійно навчається, та розуміє контекст підприємства</h2>
+        
+        <div class="footer__btn btn">
+            <div class="header__btn-inner">
+            <div class="header__btn-item">
+                <a class="btn-link" href="#">Почати тестування</a>
+            </div>
+            <div class="btn-wrapper">
+            <div class="btn-content" easy-toggle="#btn-menu-footer" easy-class="open" easy-rcoe>
+                <div class="btn-content-item" >
+                    <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+                </div>
+                <div class="btn-arrow"></div>
+
+                <ul class="submenu__btn submenu__btn--footer" id="btn-menu-footer">
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer__content">
+            <div class="footer__content-item footer__content-item--logo">
+                <div class="footer__content-item-images">
+                    <img class="footer__content-item-img" src="images/footer-logo.png" alt="logo">
+                </div>
+                <p class="footer__content-item-text">
+                    Відкрийте для себе новий, зручний функціонал, який значно спростить вашу операційну діяльність.
+                </p>
+                <div class="footer__content-item-linkbox">
+                    <div class="footer__content-item-linkbox-images">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/linkedin.png" alt="linkedin">
+                    </a>
+                    </div>
+                    <div class="footer__content-item-linkbox-images">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/facebook.png" alt="facebook">
+                    </a>
+                    </div>
+                    <div class="footer__content-item-linkbox-images">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/telegram.png" alt="telegram">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content-item footer__content-item--company">
+                <h6 class="footer__content-item-title">Компанія</h6>
+                <ul class="footer__content-item-list">
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Про нас</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Інвесторам</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Розробникам</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Ціни</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-item footer__content-item--application">
+                <h6 class="footer__content-item-title">Застосування</h6>
+                <ul class="footer__content-item-list">
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Віртуальні співробітники</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#">Чат-боти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-item">
+                <h6 class="footer__content-item-title">Підтримка</h6>
+                <div class="footer__content-item-socials">
+                    <div class="footer__content-item-socials-item">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-telegram.png" alt="telegram">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-viber.png" alt="viber">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-whatsapp.png" alt="whatsapp">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-messenger.png" alt="messenger">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-slack.png" alt="slack">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copy">
+            <p class="footer__copy-copyright">© 2023 BizAI. Всі права захищені.</p>
+            <div class="footer__copy-conditions">
+                <a class="footer__copy-link" href="#">Умови та конфіденційність</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</div>
+
+<script>
+    document.querySelector('.burger').addEventListener('click', function(){
+        this.classList.toggle('active');
+        document.querySelector('.header__menu').classList.toggle('.header__menu-open');
+    })
+</script>
+
+<script>
+    function readMore_1() {
+      var dots1 = document.getElementById("dots-1");
+      var btn1 = document.getElementById("btn-1");
+      var more1 = document.getElementById("more-1");
+      var section = document.getElementById("section");
+   
+      if(dots.style.display === "none"){
+         dots1.style.display="inline";
+         btn1.innerHTML="подивитись все";
+         more1.style.display="none";
+         section.style.marginBottom="100px";
+      } else {
+         dots1.style.display="none";
+         btn1.innerHTML="Приховати";
+         more1.style.display="inline";
+         section.style.marginBottom="210px";
+      } 
+   }
+   </script> 
+<script>
+ function readMore() {
+   var dots = document.getElementById("dots");
+   var btn = document.getElementById("btn");
+   var more = document.getElementById("more");
+   if(dots.style.display === "none"){
+      dots.style.display="inline";
+      btn.innerHTML="подивитись все";
+      more.style.display="none";
+   } else {
+      dots.style.display="none";
+      btn.innerHTML="Приховати";
+      more.style.display="inline";
+   }
+}
+</script> 
+
+
+
+<script src="'js/jquery.fancybox.min.js',"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script> 
+
+
+
+  <script type="module">
+    const easySetup = require("easy-toggler");
+    easySetup();
+  </script>
+<script src="js/main.js"></script>
 </body>
 </html>
 
