@@ -908,7 +908,6 @@ background-position: center bottom;
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background-color: rgba(19, 34, 26, 0.06);
 }
 .benefits__item {
     display: flex;
@@ -1064,7 +1063,6 @@ background-position: center bottom;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    background-color: rgba(19, 34, 26, 0.06);
 }
 .tariffs__item {
     min-width: 330px;
