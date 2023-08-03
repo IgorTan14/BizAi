@@ -80,19 +80,72 @@ $(function(){
       }
    ],
 });
+$('.header__menu-list-link--more').on('click', function (e) {
+   e.preventDefault()
+   $('.submenu__header-list').toggleClass('submenu__header-list--open')
+})
 
+$('.btn-content').on('click', function (e) {
+   e.preventDefault()
+   $('.submenu__btn').toggleClass('submenu__btn--open')
+})
 
-$('.header__menu-list-link').on('click', function (e) {
-    e.preventDefault()
-    $('.header__menu-list-link').removeClass('header__menu-list-link--click')
-    
-    $(this).toggleClass('header__menu-list-link--click')
+$('.header__lang').on('click', function (e) {
+   e.preventDefault()
+   $('.lang-menu').toggleClass('lang-menu--click')
  })
 
- 
+$('.header__menu-list-link--more').on('click', function (e) {
+   e.preventDefault()
+   $('.header__menu-list-link--more').toggleClass('header__menu-list-link--click')
+ })
+
  $('.btn-content').on('click', function (e) {
    e.preventDefault()
-   $('.btn-content').removeClass('btn-content--click')
-   $(this).toggleClass('btn-content--click')
-})
+   $('.btn-content').toggleClass('btn-content--click');
+   $('.btn-arrow').toggleClass('btn-content-arrow--click')
+ })
+
+
+//  $('.switch__input').on('click', function (e) {
+//    e.preventDefault()
+//    $('.tariffs__item-price-info').toggleClass('tariffs__item-price-info--off')
+// })
+
+ 
+
+//  $('.information-btn').on('click', function (e) {
+//    e.preventDefault()
+//    $('.modal').toggleClass('modal--active');
+//  })
+
+
+//  $('.modal__window-close').on('click', function (e) {
+//    e.preventDefault()
+//    $('.modal--active').toggleClass('modal--off'); 
+//  })
+
+//  $('.information-btn').on('click', function(){
+//    $('.modal--active').removeClass('modal')
+//   });
+
+//   $('.modal__window-close').on('click', function(){
+//    $('.modal--active').addClass('modal')
+//   });
+
+
+
+//  $('.more-text-btn').on('click', function (e) {
+//    e.preventDefault()
+ 
+//    $('.assistant__item').toggleClass('assistant__item--more');
+//  })
+ 
+//  $('.btn-content').on('click', function (e) {
+//    e.preventDefault()
+//    $('.btn-content').removeClass('btn-content')
+//    $(this).toggleClass('btn-content--click')
+// })
+
+
 });
