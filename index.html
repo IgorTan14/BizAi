@@ -29,64 +29,67 @@
 
             <ul class="header__menu-list">
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Про нас</a>
+                    <a class="header__menu-list-link opacity" href="#">Про нас</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Продукт</a>
+                    <a class="header__menu-list-link" href="#product">Продукт</a>
                 </li>
-                <li class="header__menu-list-item header__menu-list-item--more" href="#" easy-toggle="#drop-menu" easy-class="open" easy-rcoe>
-                    <a class="header__menu-list-link header__menu-list-link--more" >Застосування </a>
+                <!-- <li class="header__menu-list-item header__menu-list-item--more" easy-toggle="#drop-menu" easy-class="open" easy-rcoe> -->
+                    <li class="header__menu-list-item header__menu-list-item--more">
+                    <span class="header__menu-list-link header__menu-list-link--more">Застосування </span>
                     <span class="sub-menu__arrow sub-menu__arrow-menu"></span>
           
-                    <ul class="submenu__header-list" id="drop-menu">
+                    <!-- <ul class="submenu__header-list" id="drop-menu"> -->
+                        <ul class="submenu__header-list" id="drop-menu">
                         <li class="submenu__header-item">
-                            <a class="submenu__header-link" href="#">Віртуальні співробітники</a>
+                            <a class="submenu__header-link" href="#employees">Віртуальні співробітники</a>
                         </li>
                         <li class="submenu__header-item">
-                            <a class="submenu__header-link" href="#">Чат-боти</a>
+                            <a class="submenu__header-link" href="#chat-bot">Чат-боти</a>
                         </li>
                     </ul>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Розробникам</a>
+                    <a class="header__menu-list-link opacity" href="#">Розробникам</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Ціни</a>
+                    <a class="header__menu-list-link" href="#tariffs">Ціни</a>
                 </li>
                 <li class="header__menu-list-item">
                     <div class="header__btn btn header__menu-list-item-btn">
                         <div class="header__btn-inner">
                         <div class="header__btn-item">
-                            <a class="btn-link" href="#">Тест драйв</a>
+                            <a class="btn-link" href="http://t.me/BizAI_es_bot">Тест драйв</a>
                         </div>
-                        <div class="btn-content" easy-toggle="#btn-menu--mini" easy-class="open" easy-rcoe>
+            
+                            <div class="btn-content">
                             <div class="btn-content-item" >
                                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
                             </div>
                             <div class="btn-arrow"></div>
             
-                            <ul class="submenu__btn" id="btn-menu--mini">
+                            <ul class="submenu__btn">
                                 <li class="submenu__btn-item">
-                                    <a class="submenu__btn-link" href="#">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
                                         <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
                                     </a>
                                 </li>
-                                <li class="submenu__btn-item">
-                                    <a class="submenu__btn-link" href="#">
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#" >
                                         <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
                                     </a>
                                 </li>
-                                <li class="submenu__btn-item">
+                                <li class="submenu__btn-item submenu__btn-item--off">
                                     <a class="submenu__btn-link" href="#">
                                         <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
                                     </a>
                                 </li>
-                                <li class="submenu__btn-item">
+                                <li class="submenu__btn-item submenu__btn-item--off">
                                     <a class="submenu__btn-link" href="#">
                                         <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
                                     </a>
                                 </li>
-                                <li class="submenu__btn-item">
+                                <li class="submenu__btn-item submenu__btn-item--off">
                                     <a class="submenu__btn-link" href="#">
                                         <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
                                     </a>
@@ -99,15 +102,14 @@
             </ul>
         </nav>
        
-
-        <div class="header__lang" easy-toggle="#lang-menu" easy-class="show" easy-rcoe>
+            <div class="header__lang">
             <div class="header__lang-inner">
             <div class="header__lang-images">
                 <img class="header__lang-img" src="images/icons/lang-ua.png" alt="ua">
             </div>
             <div class="sub-menu__arrow header__lang-arr"></div>
         </div>
-        <div class="lang-menu" id="lang-menu">
+        <div class="lang-menu">
             <div class="lang-menu__inner">
                 <div class="lang-menu__item-wrapper">
                     <div class="lang-menu__item">
@@ -176,36 +178,36 @@
     <div class="header__btn btn">
         <div class="header__btn-inner">
         <div class="header__btn-item">
-            <a class="btn-link" href="index-eng.html">Тест драйв</a>
+            <a class="btn-link" href="http://t.me/BizAI_es_bot">Тест драйв</a>
         </div>
-        <div class="btn-content" easy-toggle="#btn-menu" easy-class="open" easy-rcoe>
+        <div class="btn-content">
             <div class="btn-content-item" >
                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
             </div>
             <div class="btn-arrow"></div>
 
-            <ul class="submenu__btn" id="btn-menu">
+            <ul class="submenu__btn">
                 <li class="submenu__btn-item">
-                    <a class="submenu__btn-link" href="#">
+                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
                         <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
                     </a>
                 </li>
-                <li class="submenu__btn-item">
+                <li class="submenu__btn-item submenu__btn-item--off">
                     <a class="submenu__btn-link" href="#">
                         <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
                     </a>
                 </li>
-                <li class="submenu__btn-item">
+                <li class="submenu__btn-item submenu__btn-item--off">
                     <a class="submenu__btn-link" href="#">
                         <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
                     </a>
                 </li>
-                <li class="submenu__btn-item">
+                <li class="submenu__btn-item submenu__btn-item--off">
                     <a class="submenu__btn-link" href="#">
                         <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
                     </a>
                 </li>
-                <li class="submenu__btn-item">
+                <li class="submenu__btn-item submenu__btn-item--off">
                     <a class="submenu__btn-link" href="#">
                         <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
                     </a>
@@ -218,10 +220,23 @@
             <button class="burger">
                 <span></span>
               </button>
-            </div>
 
+              <button class="information-btn" easy-toggle="#modal" easy-class="show" easy-rcoe> 
+                <div class="information-btn__wrapper">?</div>
+            </button>
+                <div class="modal" id="modal">
+                    <div class="modal__window">
+                        <p>Вибачте, це ще тільки прототип. Але ми активно працюємо, щоб скоріше надати усю потрібну Вам інформацію.</p>
+                        <button class="modal__window-close" easy-toggle="#modal" easy-class="close" easy-rcoe>X</button>
+                    </div>
+                    <div class="modal__overlay" easy-toggle="#modal" easy-class="show" easy-rcoe></div>
+                </div>
+
+            </div>
         </div>
     </div>
+
+   
 
 </header>
  <section class="top">
@@ -233,7 +248,7 @@
 </div>
 </section>
 
-<section class="assistant" id="section">
+<section class="assistant" id="product">
     <div class="container">
         <h2 class="assistant__title">Продукт та рішення</h2>
         <p class="assistant__subtitle">Відкрийте для свого бізнесу короткий шлях до цифрової трансформації!</p>
@@ -256,7 +271,7 @@
                 </div>
                 <div class="assistant__item-content">
                 <h4 class="assistant__item-title">Пам’ять та контекст</h4>
-                <p class="assistant__item-text">BizAI має довгострокову та короткострок<span id="dots1">...</span><span class="more-text" id="more1">ову та короткострокову контекстну пам'ять, що формується з історії завдань, спілкування та обробленої інформації (файлів та баз даних). Це забезпечує самонавчання та постійну актуальність, краще розуміння запитів та адекватність відповідей.</span><span class="more-text-btn" id="btn1" onclick="readMore_1()">подивитись все</span></p> 
+                <p class="assistant__item-text">BizAI має довгострокову та короткострок<span id="dots1">...</span><span class="more-text" id="more1">ову та короткострокову контекстну пам'ять, що формується з історії завдань, спілкування та обробленої інформації (файлів та баз даних). Це забезпечує самонавчання та постійну актуальність, краще розуміння запитів та адекватність відповідей.</span><span class="more-text-btn" id="btn1" onclick="readMore1()">подивитись все</span></p> 
                 <!-- <p class="assistant__item-text">BizAI має довгострокову та короткострок<span class="dots-more">...</span><span class="more-text">ову та короткострокову контекстну пам'ять, що формується з історії завдань, спілкування та обробленої інформації (файлів та баз даних). Це забезпечує самонавчання та постійну актуальність, краще розуміння запитів та адекватність відповідей.</span><span class="more-text-btn"  onclick="readMore_1()">подивитись все</span></p>  -->
             </div>
             </div>
@@ -363,7 +378,7 @@
 </section>
 
 <div class="container-min">
-    <section class="employee">
+    <section class="employee" id="employees">
         <div class="employee-bg">
     <div class="employee-wrapper">
 
@@ -387,7 +402,7 @@
 </section>
 </div>
 
-<section class="benefits">
+<section class="benefits" id="chat-bot">
     <div class="container">
         <h2 class="benefits__title">Чат-боти — представники компанії</h2>
         <p class="benefits__subtitle" style=" padding-bottom: 20px;">На відміну від існуючих підходів чат-боти не обмежені заздалегідь запланованим маршрутом діалогу, а природньо реагують на реплики співрозовників.</p>
@@ -457,7 +472,7 @@
 </div>
 </section>
 
-<section class="tariffs">
+<section class="tariffs" id="tariffs">
     <div class="container">
         <h2 class="tariffs__title">Тарифи</h2>
         <p class="tariffs__subtitle">Наш безкоштовний план чат-боту для початківців чудово підходить для того, щоб спробувати BizAI. Придбайте платний план чат-боту, щоб отримати додаткові функції</p>
@@ -832,7 +847,7 @@
         <div class="footer__btn btn">
             <div class="header__btn-inner">
             <div class="header__btn-item">
-                <a class="btn-link" href="#">Почати тестування</a>
+                <a class="btn-link" href="http://t.me/BizAI_es_bot">Почати тестування</a>
             </div>
             <div class="btn-wrapper">
             <div class="btn-content" easy-toggle="#btn-menu-footer" easy-class="open" easy-rcoe>
@@ -843,26 +858,26 @@
 
                 <ul class="submenu__btn submenu__btn--footer" id="btn-menu-footer">
                     <li class="submenu__btn-item">
-                        <a class="submenu__btn-link" href="#">
+                        <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
                             <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
                         </a>
                     </li>
-                    <li class="submenu__btn-item">
+                    <li class="submenu__btn-item submenu__btn-item--off">
                         <a class="submenu__btn-link" href="#">
                             <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
                         </a>
                     </li>
-                    <li class="submenu__btn-item">
+                    <li class="submenu__btn-item submenu__btn-item--off">
                         <a class="submenu__btn-link" href="#">
                             <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
                         </a>
                     </li>
-                    <li class="submenu__btn-item">
+                    <li class="submenu__btn-item submenu__btn-item--off">
                         <a class="submenu__btn-link" href="#">
                             <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
                         </a>
                     </li>
-                    <li class="submenu__btn-item">
+                    <li class="submenu__btn-item submenu__btn-item--off">
                         <a class="submenu__btn-link" href="#">
                             <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
                         </a>
@@ -882,18 +897,18 @@
                     Відкрийте для себе новий, зручний функціонал, який значно спростить вашу операційну діяльність.
                 </p>
                 <div class="footer__content-item-linkbox">
-                    <div class="footer__content-item-linkbox-images">
+                    <div class="footer__content-item-linkbox-images opacity">
                         <a class="footer__content-item-linkbox-link" href="#">
                         <img class="footer__content-item-linkbox-img" src="images/icons/linkedin.png" alt="linkedin">
                     </a>
                     </div>
-                    <div class="footer__content-item-linkbox-images">
+                    <div class="footer__content-item-linkbox-images opacity">
                         <a class="footer__content-item-linkbox-link" href="#">
                         <img class="footer__content-item-linkbox-img" src="images/icons/facebook.png" alt="facebook">
                     </a>
                     </div>
                     <div class="footer__content-item-linkbox-images">
-                        <a class="footer__content-item-linkbox-link" href="#">
+                        <a class="footer__content-item-linkbox-link" href="http://t.me/BizAI_support_bot">
                         <img class="footer__content-item-linkbox-img" src="images/icons/telegram.png" alt="telegram">
                     </a>
                     </div>
@@ -902,19 +917,19 @@
             <div class="footer__content-item footer__content-item--company">
                 <h6 class="footer__content-item-title">Компанія</h6>
                 <ul class="footer__content-item-list">
-                    <li class="footer__content-item-list-item">
+                    <li class="footer__content-item-list-item opacity">
                         <a class="footer__content-item-list-link" href="#">Про нас</a>
                     </li>
-                    <li class="footer__content-item-list-item">
+                    <li class="footer__content-item-list-item opacity">
                         <a class="footer__content-item-list-link" href="#">Інвесторам</a>
                     </li>
-                    <li class="footer__content-item-list-item">
-                        <a class="footer__content-item-list-link" href="#">Розробникам</a>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#tarif">Розробникам</a>
                     </li>
                     <li class="footer__content-item-list-item">
-                        <a class="footer__content-item-list-link" href="#">Ціни</a>
+                        <a class="footer__content-item-list-link" href="#tariffs">Ціни</a>
                     </li>
-                    <li class="footer__content-item-list-item">
+                    <li class="footer__content-item-list-item opacity">
                         <a class="footer__content-item-list-link" href="#">Контакти</a>
                     </li>
                 </ul>
@@ -923,10 +938,10 @@
                 <h6 class="footer__content-item-title">Застосування</h6>
                 <ul class="footer__content-item-list">
                     <li class="footer__content-item-list-item">
-                        <a class="footer__content-item-list-link" href="#">Віртуальні співробітники</a>
+                        <a class="footer__content-item-list-link" href="#employees">Віртуальні співробітники</a>
                     </li>
                     <li class="footer__content-item-list-item">
-                        <a class="footer__content-item-list-link" href="#">Чат-боти</a>
+                        <a class="footer__content-item-list-link" href="#chat-bot">Чат-боти</a>
                     </li>
                 </ul>
             </div>
@@ -934,26 +949,26 @@
                 <h6 class="footer__content-item-title">Підтримка</h6>
                 <div class="footer__content-item-socials">
                     <div class="footer__content-item-socials-item">
-                        <div class="footer__content-item-socials-link">
+                        <a class="footer__content-item-socials-link" href="http://t.me/BizAI_support_bot">
                         <img class="footer__content-item-socials-img" src="images/icons/social-telegram.png" alt="telegram">
+                        </a>
                     </div>
-                    </div>
-                    <div class="footer__content-item-socials-item">
+                    <div class="footer__content-item-socials-item opacity">
                         <div class="footer__content-item-socials-link">
                         <img class="footer__content-item-socials-img" src="images/icons/social-viber.png" alt="viber">
                     </div>
                     </div>
-                    <div class="footer__content-item-socials-item">
+                    <div class="footer__content-item-socials-item opacity">
                         <div class="footer__content-item-socials-link">
                         <img class="footer__content-item-socials-img" src="images/icons/social-whatsapp.png" alt="whatsapp">
                     </div>
                     </div>
-                    <div class="footer__content-item-socials-item">
+                    <div class="footer__content-item-socials-item opacity">
                         <div class="footer__content-item-socials-link">
                         <img class="footer__content-item-socials-img" src="images/icons/social-messenger.png" alt="messenger">
                     </div>
                     </div>
-                    <div class="footer__content-item-socials-item">
+                    <div class="footer__content-item-socials-item opacity">
                         <div class="footer__content-item-socials-link">
                         <img class="footer__content-item-socials-img" src="images/icons/social-slack.png" alt="slack">
                     </div>
@@ -961,10 +976,9 @@
                 </div>
             </div>
         </div>
-
         <div class="footer__copy">
             <p class="footer__copy-copyright">© 2023 BizAI. Всі права захищені.</p>
-            <div class="footer__copy-conditions">
+            <div class="footer__copy-conditions opacity">
                 <a class="footer__copy-link" href="#">Умови та конфіденційність</a>
             </div>
         </div>
@@ -1001,22 +1015,7 @@ if(isMobile.any()){
 	body.classList.add('mouse');
 }
 </script>
-
-<script>
-    const btn_more = document.querySelector('.tariffs__item-info-more');
-    const btn_more_close = document.querySelector('.tariffs__item-info-more--close');
-    const tariff_benefits = document.querySelector('.tariff_benefit');
-
-    btn.addEventListener('click', function(){
-
-        for(let tariff_benefi of tariff_benefits) {
-            tariff_benefi.style.display = 'flex'
-        }
-        btn_more.style.display = 'none';
-        btn_more_close.style.display = 'block';
-
-    });
-</script> -->
+ -->
 
 <script>
     document.querySelector('.burger').addEventListener('click', function(){
@@ -1024,48 +1023,6 @@ if(isMobile.any()){
         document.querySelector('.header__menu').classList.toggle('.header__menu-open');
     })
 </script>
-
-<!-- <script>
-    function readMore_1() {
-      var dots1 = document.getElementById("dots1");
-      var btn1 = document.getElementById("btn1");
-      var more1 = document.getElementById("more1");
-      var section = document.getElementById("section");
-   
-      if(dots.style.display === "none"){
-         dots1.style.display="inline";
-         btn1.innerHTML="подивитись все";
-         more1.style.display="none";
-         section.style.marginBottom="100px";
-      } else {
-         dots1.style.display="none";
-         btn1.innerHTML="Приховати";
-         more1.style.display="inline";
-         section.style.marginBottom="210px";
-      } 
-   }
-   </script>  -->
-   
-<!-- <script>
-function readMore() {
-      var dots = document.getElementsByClassName(".dots-more");
-      var btn = document.getElementsByClassName(".more-text-btn");
-      var more = document.getElementsByClassName(".more-text");
-    //   var section = document.getElementsByClassName("section");
-   
-      if(dots.style.display === "none"){
-         dots.style.display="inline";
-         btn.innerHTML="подивитись все";
-         more.style.display="none";
-        //  section.style.marginBottom="100px";
-      } else {
-         dots.style.display="none";
-         btn.innerHTML="Приховати";
-         more.style.display="inline";
-        //  section.style.marginBottom="210px";
-      } 
-   }
-   </script>  -->
    
  <script>
  function readMore() {
@@ -1084,6 +1041,23 @@ function readMore() {
 }
 </script>  
 
+<script>
+    function readMore1() {
+      var dots1 = document.getElementById("dots1");
+      var btn1 = document.getElementById("btn1");
+      var more1 = document.getElementById("more1");
+      if(dots1.style.display === "none"){
+         dots1.style.display="inline";
+         btn1.innerHTML="подивитись все";
+         more1.style.display="none";
+      } else {
+         dots1.style.display="none";
+         btn1.innerHTML="Приховати";
+         more1.style.display="inline";
+      }
+   }
+   </script>  
+
 
 
 <script src="'js/jquery.fancybox.min.js',"></script>
@@ -1094,10 +1068,10 @@ function readMore() {
 
 
 
-  <script type="module">
+  <!-- <script type="module">
     const easySetup = require("easy-toggler");
     easySetup();
-  </script>
+  </script> -->
 <script src="js/main.js"></script>
 </body>
 
