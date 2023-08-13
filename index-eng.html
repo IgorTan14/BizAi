@@ -34,12 +34,10 @@
                 <li class="header__menu-list-item">
                     <a class="header__menu-list-link" href="#product">Product</a>
                 </li>
-                <!-- <li class="header__menu-list-item header__menu-list-item--more" easy-toggle="#drop-menu" easy-class="open" easy-rcoe> -->
                     <li class="header__menu-list-item header__menu-list-item--more">
                     <span class="header__menu-list-link header__menu-list-link--more">Application </span>
                     <span class="sub-menu__arrow sub-menu__arrow-menu"></span>
           
-                    <!-- <ul class="submenu__header-list" id="drop-menu"> -->
                         <ul class="submenu__header-list" id="drop-menu">
                         <li class="submenu__header-item">
                             <a class="submenu__header-link" href="#employees">Virtual employees</a>
@@ -56,14 +54,14 @@
                     <a class="header__menu-list-link" href="#tariffs">Prices</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <div class="header__btn btn header__menu-list-item-btn">
+                    <div class="header__btn btn header__menu-list-item-btn eng_header__btn">
                         <div class="header__btn-inner">
                         <div class="header__btn-item">
                             <a class="btn-link" href="http://t.me/BizAI_es_bot">Test Drive</a>
                         </div>
             
                             <div class="btn-content">
-                            <div class="btn-content-item" >
+                            <div class="btn-content-item eng_btn-content-item">
                                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
                             </div>
                             <div class="btn-arrow"></div>
@@ -124,12 +122,12 @@
             <div class="lang-menu__item-wrapper">
                 <div class="lang-menu__item">
             <div class="lang-menu__images">
-                <a class="lang-menu__link" href="index-eng.html">
+                <a class="lang-menu__link" href="index.html">
                 <img class="lang-menu__img" src="images/icons/lang-ua.png" alt="ua">
             </a>
             </div>
             <div class="lang-menu__name">
-                <a class="lang-menu__link" href="index-ua.html">укр</a>
+                <a class="lang-menu__link" href="index.html">укр</a>
             </div>
         </div>
         </div>
@@ -181,7 +179,7 @@
             <a class="btn-link" href="http://t.me/BizAI_es_bot">Test Drive</a>
         </div>
         <div class="btn-content">
-            <div class="btn-content-item" >
+            <div class="btn-content-item eng_btn-content-item" >
                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
             </div>
             <div class="btn-arrow"></div>
@@ -272,7 +270,7 @@
                 </div>
                 <div class="assistant__item-content">
                 <h4 class="assistant__item-title">Memory and context</h4>
-                <p class="assistant__item-text">BizAI has long term and short te<span id="dots1">...</span><span class="more-text" id="more1">rm and short-term contextual memory, which is formed from the history of tasks, communication and processed information (files and databases). This ensures self-learning and constant relevance, better understanding of requests and adequacy of answers.</span><span class="more-text-btn" id="btn1" onclick="readMore1()">see all</span></p> 
+                <p class="assistant__item-text">BizAI has long term and short te<span id="eng-dots1">...</span><span class="more-text" id="eng-more1">rm and short-term contextual memory, which is formed from the history of tasks, communication and processed information (files and databases). This ensures self-learning and constant relevance, better understanding of requests and adequacy of answers.</span><span class="more-text-btn" id="eng-btn1" onclick="eng_readMore1()">see all</span></p> 
                 <!-- <p class="assistant__item-text">BizAI має довгострокову та короткострок<span class="dots-more">...</span><span class="more-text">ову та короткострокову контекстну пам'ять, що формується з історії завдань, спілкування та обробленої інформації (файлів та баз даних). Це забезпечує самонавчання та постійну актуальність, краще розуміння запитів та адекватність відповідей.</span><span class="more-text-btn"  onclick="readMore_1()">подивитись все</span></p>  -->
             </div>
             </div>
@@ -315,7 +313,7 @@
                 </div>
                 <div class="assistant__item-content assistant__item-content--bottom" style="padding-top: 0;">
                 <h4 class="assistant__item-title assistant__item-title--big">Business processes</h4>
-                <p class="assistant__item-text">BizAI is an intelligent assistant that describes your company's business processes in dialogue, analyzes them and makes them as efficient as poss<span id="dots">...</span><span class="more-text" id="more">ible automates It also takes a proactive stance, helping you improve them and realize your potential.</span><span class="more-text-btn" id="btn" onclick="readMore()">see all</span></p>   
+                <p class="assistant__item-text">BizAI is an intelligent assistant that describes your company's business processes in dialogue, analyzes them and makes them as efficient as poss<span id="eng-dots">...</span><span class="more-text" id="eng-more">ible automates It also takes a proactive stance, helping you improve them and realize your potential.</span><span class="more-text-btn" id="eng-btn" onclick="eng_readMore()">see all</span></p>   
             </div>
         </div>
             </div>
@@ -480,7 +478,9 @@
             <p class="tariffs__tariff-span">Monthly</p>
             <label class="switch">
                 <input class="switch__input" type="checkbox">
-                <span class="switch__slider" checked></span>
+                <span class="switch__slider" checked>
+                <div class="switch-circle"></div>
+                </span>
             </label>
             <div class="tariffs__tariff-box">
             <p class="tariffs__tariff-text">Payment per year</p>
@@ -500,7 +500,50 @@
                 <div class="tariffs__item-price"><span class="tariffs__item-price-num">$0</span>/free
         
                 </div>
-                <button class="tariffs__item-btn">Try</button>
+                <button class="tariffs__item-btn">
+                    <div class="tariffs__item-btn-inner eng_tariffs__item-btn-inner">
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Try</a>
+    
+                        <div class="tariffs__item-btn-content tariffs__item-btn-content--1">
+                            <div class="btn-content-item tariffs__item-btn-content-item tariffs__item-btn-content-item-img--1">
+                                <div class="tariffs__item-btn-content-item-img" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tariffs__btn-arrow tariffs__btn-arrow--1"></div>
+                
+                            <ul class="submenu__btn-tariff submenu__btn--1">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </button>
                 </div>
                 <div class="tariffs__item-info">
                     <h6 class="tariffs__item-info-title">What features does it include?</h6>
@@ -510,8 +553,9 @@
                         <li class="tariffs__item-info-item">The level of communication and understanding of tasks - GPT2</li>
                         <li class="tariffs__item-info-item">1 user</li>
                         <li class="tariffs__item-info-item">1 active business process</li>
+                        <a class="tariffs__item-info-more opacity" >Show more</a>
                     </ul>
-                    <a class="tariffs__item-info-more opacity" >Show more</a>
+                   
                 </div>
             </div>
 
@@ -524,10 +568,53 @@
                 <p class="tariffs__item-text">
                     Chatbot for large teams and corporations
                 </p>
-                <div class="tariffs__item-price"><span class="tariffs__item-price-num">$30</span>/month
+                <div class="tariffs__item-price"><span class="tariffs__item-price-num tariffs__item-price-num--off">$30</span><span class="tariffs__item-price-num--before">$35</span><span class="tariffs__item-price-mouth">/month</span>
                 <br><p class="tariffs__item-price-info">$360/year</p>
                 </div>
-                <button class="tariffs__item-btn">Try</button>
+                <button class="tariffs__item-btn">
+                    <div class="tariffs__item-btn-inner eng_tariffs__item-btn-inner">
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Try</a>
+    
+                        <div class="tariffs__item-btn-content tariffs__item-btn-content--2">
+                            <div class="btn-content-item tariffs__item-btn-content-item" >
+                                <div class="tariffs__item-btn-content-item-img tariffs__item-btn-content-item-img--2" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tariffs__btn-arrow tariffs__btn-arrow--2"></div>
+                
+                            <ul class="submenu__btn-tariff submenu__btn--2">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </button>
                 </div>
                 <div class="tariffs__item-info">
                     <h6 class="tariffs__item-info-title">What features does it include?</h6>
@@ -551,10 +638,53 @@
             </div>
                 <h6 class="tariffs__item-title" >Pro</h6>
                 <p class="tariffs__item-text">A chatbot for your business</p>
-                <div class="tariffs__item-price" ><span class="tariffs__item-price-num">$50</span>/month
+                <div class="tariffs__item-price" ><span class="tariffs__item-price-num tariffs__item-price-num--off">$50</span><span class="tariffs__item-price-num--before tariffs__item-price-num--before-checked">$57</span><span class="tariffs__item-price-mouth">/month</span>
                 <br><p class="tariffs__item-price-info">$600/year</p>
                 </div>
-                <button class="tariffs__item-btn">Try</button>
+                <button class="tariffs__item-btn">
+                    <div class="tariffs__item-btn-inner eng_tariffs__item-btn-inner">
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Try</a>
+    
+                        <div class="tariffs__item-btn-content tariffs__item-btn-content--3">
+                            <div class="btn-content-item tariffs__item-btn-content-item" >
+                                <div class="tariffs__item-btn-content-item-img tariffs__item-btn-content-item-img--3" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tariffs__btn-arrow tariffs__btn-arrow--3"></div>
+                
+                            <ul class="submenu__btn-tariff submenu__btn--3">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </button>
                 </div>
                 <div class="tariffs__item-info">
                     <h6 class="tariffs__item-info-title">What features does it include?</h6>
@@ -564,18 +694,9 @@
                         <li class="tariffs__item-info-item tariff_benefit">The level of communication and understanding of tasks - GPT4</li>
                         <li class="tariffs__item-info-item tariff_benefit">Managing the skill set of virtual employees</li>
                         <li class="tariffs__item-info-item tariff_benefit">Self-adjustment of business processes</li>
-
-                        <!-- <li class="tariffs__item-info-item tariff_benefit">Додаткові користувачі (40$/міс)</li>
-                        <li class="tariffs__item-info-item tariff_benefit">Обсяг довгострокової пам'яті 1 Гб</li> -->
+                        <a class="tariffs__item-info-more opacity" >Show more</a>
                     </ul>
-                    <a class="tariffs__item-info-more opacity" >Show more</a>
-                    <!-- <button type="button" class="tariffs__item-info-more" href="#">Показати більше</button>
-                    <button type="button" class="tariffs__item-info-more--close" href="#">Приховати</button> -->
-                    <!-- <ul class="tariffs__item-info-list--more" id="tariffs__item--more">
-                        <li class="tariffs__item-info-item">Додаткові користувачі (40$/міс)</li>
-                        <li class="tariffs__item-info-item">Обсяг довгострокової пам'яті 1 Гб</li>
-                    </ul>
-                    <button id="tariffs__item-btn" onclick="readMore()" class="tariffs__item-info-more" >Показати більше</button> -->
+                
                 </div>
             </div>
 
@@ -594,7 +715,7 @@
                     </div>
                     <p class="tariffs__item-connection-text">/contact us</p>
                 </div>
-                <button class="tariffs__item-btn tariffs__item-connection-btn">
+                <button class="tariffs__item-btn tariffs__item-connection-btn" style="font-size: 13px;">
                     Contact for an estimate
                 </button>
                 </div>
@@ -606,8 +727,9 @@
                         <li class="tariffs__item-info-item">Own rules of context formation</li>
                         <li class="tariffs__item-info-item">Formation of an individual AI model</li>
                         <li class="tariffs__item-info-item">Diversified businesses with different contexts</li>
+                        <a class="tariffs__item-info-more opacity">Show more</a>
                     </ul>
-                    <a class="tariffs__item-info-more opacity">Show more</a>
+                   
                 </div>
             </div>
         </div>
@@ -859,16 +981,16 @@
         <div class="footer__btn btn">
             <div class="header__btn-inner">
             <div class="header__btn-item">
-                <a class="btn-link" href="http://t.me/BizAI_es_bot">Start testing</a>
+                <a class="btn-link" href="http://t.me/BizAI_es_bot">Почати тестування</a>
             </div>
             <div class="btn-wrapper">
-            <div class="btn-content" easy-toggle="#btn-menu-footer" easy-class="open" easy-rcoe>
-                <div class="btn-content-item" >
+                <div class="btn-content--footer">
+                <div class="btn-content-item btn-content-item--footer" >
                     <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
                 </div>
-                <div class="btn-arrow"></div>
+                <div class="btn-arrow--footer"></div>
 
-                <ul class="submenu__btn submenu__btn--footer" id="btn-menu-footer">
+                <ul class="submenu__btn--footer">
                     <li class="submenu__btn-item">
                         <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
                             <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
@@ -1037,40 +1159,38 @@ if(isMobile.any()){
 </script>
    
  <script>
- function readMore() {
-   var dots = document.getElementById("dots");
-   var btn = document.getElementById("btn");
-   var more = document.getElementById("more");
+ function eng_readMore() {
+   var dots = document.getElementById("eng-dots");
+   var btn = document.getElementById("eng-btn");
+   var more = document.getElementById("eng-more");
 
    if(dots.style.display === "none"){
       dots.style.display="inline";
-      btn.innerHTML="подивитись все";
+      btn.innerHTML="see all";
       more.style.display="none"; 
    } else {
       dots.style.display="none";
-      btn.innerHTML="Приховати";
+      btn.innerHTML="hide";
       more.style.display="inline";
    }
 }
 </script>  
 
 <script>
-    function readMore1() {
-      var dots1 = document.getElementById("dots1");
-      var btn1 = document.getElementById("btn1");
-      var more1 = document.getElementById("more1");
-      var security = document.getElementsByClassName("security");
+    function eng_readMore1() {
+      var dots1 = document.getElementById("eng-dots1");
+      var btn1 = document.getElementById("eng-btn1");
+      var more1 = document.getElementById("eng-more1");
       if(dots1.style.display === "none"){
          dots1.style.display="inline";
-         btn1.innerHTML="подивитись все";
+         btn1.innerHTML="see all";
          more1.style.display="none";
       } else {
          dots1.style.display="none";
-         btn1.innerHTML="Приховати";
+         btn1.innerHTML="hide";
          more1.style.display="inline";
          security.style.display="none";
       }
-      security.style.display="none";
    }
    </script>  
 
