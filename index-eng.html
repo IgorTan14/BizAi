@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizAi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="container">
+    <div class="header__inner">
+        <a class="header__logo" href="index.html">
+            <img class="header__img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="header__menu">
+
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link opacity" href="#">About us</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link" href="#product">Product</a>
+                </li>
+                    <li class="header__menu-list-item header__menu-list-item--more">
+                    <span class="header__menu-list-link header__menu-list-link--more">Application </span>
+                    <span class="sub-menu__arrow sub-menu__arrow-menu"></span>
+          
+                        <ul class="submenu__header-list" id="drop-menu">
+                        <li class="submenu__header-item">
+                            <a class="submenu__header-link" href="#employees">Virtual employees</a>
+                        </li>
+                        <li class="submenu__header-item">
+                            <a class="submenu__header-link" href="#chat-bot">Chat bots</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link opacity" href="#">To the developers</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link" href="#tariffs">Prices</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <div class="header__btn btn header__menu-list-item-btn eng_header__btn">
+                        <div class="header__btn-inner">
+                        <div class="header__btn-item">
+                            <a class="btn-link" href="http://t.me/BizAI_es_bot">Test Drive</a>
+                        </div>
+            
+                            <div class="btn-content">
+                            <div class="btn-content-item eng_btn-content-item">
+                                <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+                            </div>
+                            <div class="btn-arrow"></div>
+            
+                            <ul class="submenu__btn">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#" >
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+       
+            <div class="header__lang">
+            <div class="header__lang-inner">
+            <div class="header__lang-images">
+                <img class="header__lang-img" src="images/icons/lang-eng.png" alt="ua">
+            </div>
+            <div class="sub-menu__arrow header__lang-arr"></div>
+        </div>
+        <div class="lang-menu">
+            <div class="lang-menu__inner">
+                <div class="lang-menu__item-wrapper">
+                    <div class="lang-menu__item">
+                <div class="lang-menu__images">
+                    <img class="lang-menu__img" src="images/icons/lang-eng.png" alt="ua">
+                </div>
+                <div class="lang-menu__name">
+                    <a class="lang-menu__link" href="#">eng</a>
+                </div>
+            </div>
+            </div>
+            <div class="lang-menu__item-wrapper">
+                <div class="lang-menu__item">
+            <div class="lang-menu__images">
+                <a class="lang-menu__link" href="index.html">
+                <img class="lang-menu__img" src="images/icons/lang-ua.png" alt="ua">
+            </a>
+            </div>
+            <div class="lang-menu__name">
+                <a class="lang-menu__link" href="index.html">укр</a>
+            </div>
+        </div>
+        </div>
+        <div class="lang-menu__item-wrapper">
+            <div class="lang-menu__item opacity">
+        <div class="lang-menu__images">
+            <a class="lang-menu__link" href="#">
+            <img class="lang-menu__img" src="images/icons/lang-canada.png" alt="ua">
+            </a>
+        </div>
+        <div class="lang-menu__name">
+            <a class="lang-menu__link" href="#">Canada</a>
+        </div>
+    </div>
+    </div>
+    <div class="lang-menu__item-wrapper">
+        <div class="lang-menu__item opacity">
+    <div class="lang-menu__images">
+        <a class="lang-menu__link" href="#">
+        <img class="lang-menu__img" src="images/icons/lang-gb.png" alt="ua">
+        </a>
+    </div>
+    <div class="lang-menu__name">
+        <a class="lang-menu__link" href="#">Britain</a>
+    </div>
+</div>
+</div>
+<div class="lang-menu__item-wrapper">
+    <div class="lang-menu__item opacity">
+<div class="lang-menu__images">
+    <a class="lang-menu__link" href="#">
+    <img class="lang-menu__img" src="images/icons/lang-aus.png" alt="ua">
+    </a>
+</div>
+<div class="lang-menu__name">
+    <a class="lang-menu__link" href="#">Australia</a>
+</div>
+</div> 
+</div>
+        </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="header__btn btn">
+        <div class="header__btn-inner">
+        <div class="header__btn-item">
+            <a class="btn-link" href="http://t.me/BizAI_es_bot">Test Drive</a>
+        </div>
+        <div class="btn-content">
+            <div class="btn-content-item eng_btn-content-item" >
+                <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+            </div>
+            <div class="btn-arrow"></div>
+
+            <ul class="submenu__btn">
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
+                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+        <div class="burger__wrapper" style="margin: auto 0;">
+            <button class="burger">
+                <span></span>
+              </button>
+
+              <button class="information-btn" easy-toggle="#modal" easy-class="show" easy-rcoe> 
+                <div class="information-btn__wrapper">?</div>
+            </button>
+                <div class="modal" id="modal">
+                    <div class="modal__window">
+                        <p>Sorry, this is just a prototype. But we are actively working to provide you with all the information you need as soon as possible.</p>
+                        <button class="modal__window-close" easy-toggle="#modal" easy-class="close" easy-rcoe>X</button>
+                    </div>
+                    <div class="modal__overlay" easy-toggle="#modal" easy-class="show" easy-rcoe></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+
+</header>
+ <section class="top">
+    <div class="container">
+    <h1 class="top__title"><span class="top__title-center">Controlled <span class="top__title-blue"> AI business assistant</span></span><span class="top__title-left">to increase productivity </span><span class="top__title-right">and performing a back office routine</span></h1>
+</div>
+<div class="container-min top__images">
+    <img class="top__img" src="images/top.png" alt="top">
+</div>
+</section>
+
+<section class="assistant" id="product">
+    <div class="container">
+        <h2 class="assistant__title">Product and solution</h2>
+        <p class="assistant__subtitle">Open a short path to digital transformation for your business!</p>
+        <div class="assistant__wrapper">
+            <div class="assistant__left">
+            <div class="assistant__item assistant__item--big assistant__item--big-top">
+                <div class="assistant__item-box">
+                    <img style="margin-left: auto;" src="images/assistant/0.png" alt="chat">
+                    <img src="images/assistant/1.png" alt="chat">
+                </div>
+    
+                <div class="assistant__item-content">
+                <h4 class="assistant__item-title assistant__item-title--big">Task</h4>
+                <p class="assistant__item-text">BizAI is your reliable assistant that communicates in human language and provides necessary information, performs tasks and complex operations</p>
+            </div>
+        </div>
+        <div class="assistant__bottom">
+            <div class="assistant__item  assistant__item--min assistant__item--more">
+                <div class="assistant__item-img">
+                <img src="images/assistant/2.png" alt="2">
+                </div>
+                <div class="assistant__item-content">
+                <h4 class="assistant__item-title">Memory and context</h4>
+                <p class="assistant__item-text">BizAI has long term and short te<span id="eng-dots1">...</span><span class="more-text" id="eng-more1">rm and short-term contextual memory, which is formed from the history of tasks, communication and processed information (files and databases). This ensures self-learning and constant relevance, better understanding of requests and adequacy of answers.</span><span class="more-text-btn" id="eng-btn1" onclick="eng_readMore1()">see all</span></p> 
+                <!-- <p class="assistant__item-text">BizAI має довгострокову та короткострок<span class="dots-more">...</span><span class="more-text">ову та короткострокову контекстну пам'ять, що формується з історії завдань, спілкування та обробленої інформації (файлів та баз даних). Це забезпечує самонавчання та постійну актуальність, краще розуміння запитів та адекватність відповідей.</span><span class="more-text-btn"  onclick="readMore_1()">подивитись все</span></p>  -->
+            </div>
+            </div>
+            <div class="assistant__item assistant__item--min">
+                <div class="assistant__item-img">
+                <img src="images/assistant/3.png" alt="3">
+                </div>
+                <div class="assistant__item-content assistant__item-content--integration">
+                <h4 class="assistant__item-title">Integration</h4>
+                <p class="assistant__item-text">BizAI combines specialized applications into holistic processes</p>
+        </div>
+    </div>
+            </div>
+        </div>
+        <div class="assistant__right">
+            <div class="assistant__top">
+            <div class="assistant__item assistant__item--min">
+                <div class="assistant__item-img assistant__item-img--history">
+                <img src="images/assistant/4.png" alt="4">
+                </div>
+                <div class="assistant__item-content">
+                <h4 class="assistant__item-title">Analytics</h4>
+                <p class="assistant__item-text">Prepares data analysis upon request, and issues it both in text and graphically</p>
+            </div>
+            </div>
+            <div class="assistant__item assistant__item--min">
+                <div class="assistant__item-img">
+                <img src="images/assistant/5.png" alt="5">
+                </div>
+                <div class="assistant__item-content">
+                <h4 class="assistant__item-title">Files, database</h4>
+                <p class="assistant__item-text">BizAI is capable of processing data from various file types</p>
+            </div>
+            </div>
+        </div>
+            <div class="assistant__item  assistant__item--big assistant__item--big-bottom">
+                <div class="assistant__item-img assistant__item-img--big">
+                    <h4 class="assistant__item-title" style="padding-bottom: 30px;">Order Processing</h4>
+                <img src="images/assistant/6-1.png" alt="6">
+                </div>
+                <div class="assistant__item-content assistant__item-content--bottom" style="padding-top: 0;">
+                <h4 class="assistant__item-title assistant__item-title--big">Business processes</h4>
+                <p class="assistant__item-text">BizAI is an intelligent assistant that describes your company's business processes in dialogue, analyzes them and makes them as efficient as poss<span id="eng-dots">...</span><span class="more-text" id="eng-more">ible automates It also takes a proactive stance, helping you improve them and realize your potential.</span><span class="more-text-btn" id="eng-btn" onclick="eng_readMore()">see all</span></p>   
+            </div>
+        </div>
+            </div>
+        </div>
+        </div>
+</section> 
+
+<div class="container-min">
+<section class="security">
+    <div class="security__wrapper">
+    <div class="security__inner">
+        <h4 class="security__title">Security</h4>
+            <div class="security__content">
+                <div class="security__item">
+                <p class="security__item-text">Deployment of AI and DB models on own servers is available</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">Regular external security checks</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">To general models, depersonalized information is transmitted</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">Customer information is not mixed</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">When disabled, all information and context is completely removed</p>
+            </div>
+            <div class="security__item">
+                <p class="security__item-text">Sensitive information in secure storage</p>
+            </div>
+        </div>
+    </div>
+    <div class="security__images">
+        <img class="security__img" src="images/security-bg.png" alt="security img">
+    </div>
+</div>
+</section>
+</div>
+
+<section class="introduction">
+    <div class="container">
+        <div class="introduction__inner">
+            <div class="introduction__video">
+                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=BY9T0pXU1NM">
+                   <img class="video_video-icon" src="images/icons/play-button.png" alt="Play video icon">
+                </a>
+             </div>
+             <div class="introduction__content">
+             <h2 class="introduction__title">Introduction to BizAI</h2>
+             <p class="introduction__text">
+                BizAI is an intelligent chatbot for sales<br> and support, who is constantly self-educated<br> and every time it becomes more and more intelligent.
+                <br>
+                <br>
+                Discover a new, convenient functionality that will greatly simplify your operational activities.
+             </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<div class="container-min">
+    <section class="employee" id="employees">
+        <div class="employee-bg">
+    <div class="employee-wrapper">
+
+    <h2 class="employee__title">Virtual employees</h2>
+    <div class="employee__inner">
+        <ul class="employee__left">
+            <li class="employee__item employee__item-1">Personal assistant</li>
+            <li class="employee__item employee__item-2">Seller</li>
+            <li class="employee__item employee__item-3">Lawyer</li>
+            <li class="employee__item employee__item-4">Accountant</li>
+        </ul>
+        <ul class="employee__right">
+            <li class="employee__item employee__item-5">Financier</li>
+            <li class="employee__item employee__item-6">Marketer</li>
+            <li class="employee__item employee__item-7">Provider</li>
+            <li class="employee__item employee__item-8">Project manager</li>
+        </ul>
+    </div>
+</div>
+</div>
+</section>
+</div>
+
+<section class="benefits" id="chat-bot">
+    <div class="container">
+        <h2 class="benefits__title">Chatbots are representatives of the company</h2>
+        <p class="benefits__subtitle" style=" padding-bottom: 20px;">Unlike existing approaches, chatbots are not limited by a pre-planned dialogue route, but naturally respond to co-developers' cues.</p>
+        <p class="benefits__subtitle"> They are proactive and use dialogues and specific skills to fulfill their role task. They know how to work in any popular messenger, on marketplaces and social networks, creating a single point for communication.</p>
+        <div class="benefits__wrapper">
+            <div class="benefits__item">
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Seller</h4>
+                <p class="benefits__item-text">
+                    Answers questions about the company and products/services, recommends and forms orders. The difference from standard chatbots in the approach: tries to find out the internal needs of the buyer in a dialogue and make a value proposition, selling as a junior salesperson, but constantly learning.
+                </p>
+                </div>
+                <div class="benefits__item-images">
+                <img class="benefits__item-img" src="images/benefits_1.png" alt="chat">
+            </div>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-images" style="padding: 60px 78px;">
+                <img class="benefits__item-img" src="images/benefits_2.png" alt="chat">
+                </div>
+            <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Support</h4>
+                <p class="benefits__item-text">
+                    BizAI takes over all tasks of the first line of support. It can answer questions according to the context of your company, accept requests and send notifications about status changes.
+                </p>
+            </div>
+        </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Recruiter</h4>
+                <p class="benefits__item-text">
+                    Helps recruiters quickly and efficiently process applications from candidates and provides convenient communication with them. BizAI pre-screens candidates by analyzing their profile and CV and quickly selects the best candidates for further consideration.
+                </p>
+                </div>
+                <div class="benefits__item-images" style="padding: 67px 60px;">
+                    <img class="benefits__item-img" src="images/benefits_3.png" alt="chat">
+                </div>
+            </div>
+          
+           
+            <div class="benefits__item">
+                <div class="benefits__item-images" style="padding: 53px 60px;">
+                    <img class="benefits__item-img" src="images/benefits_4.png" alt="chat">
+                </div>
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">Purchasing</h4>
+                <p class="benefits__item-text">
+                    Ensures communication with suppliers, both existing and potential. Accepts proposals so that they do not end up in spam, informs about needs, ensures document flow.
+                </p>
+            </div>
+        </div>
+    
+            <div class="benefits__item">
+                <div class="benefits__item-content">
+                <h4 class="benefits__item-title">For investors</h4>
+                <p class="benefits__item-text">
+                    Responsible for communicating with investors, both current and prospective. Provides them with information on request with different levels of access, immediately performing the function of an analyst working with a "virtual data room". Also periodically informs investors about events in the life of the company.
+                </p>
+            </div>
+            <div class="benefits__item-images">
+                <img class="benefits__item-img" src="images/benefits_5.png" alt="chat">
+            </div>
+            </div>
+        </div>
+</div>
+</section>
+
+<section class="tariffs" id="tariffs">
+    <div class="container">
+        <h2 class="tariffs__title">Tariffs</h2>
+        <p class="tariffs__subtitle">Our free chatbot starter plan is great for trying out BizAI. Purchase a paid chatbot plan to get more features</p>
+        <div class="tariffs__tariff">
+            <p class="tariffs__tariff-span">Monthly</p>
+            <label class="switch">
+                <input class="switch__input" type="checkbox">
+                <span class="switch__slider" checked>
+                <div class="switch-circle"></div>
+                </span>
+            </label>
+            <div class="tariffs__tariff-box">
+            <p class="tariffs__tariff-text">Payment per year</p>
+            <div class="tariffs__tariff-promotion">10% discount</div>
+        </div>
+        </div>
+        <div class="tariffs__inner">
+            <div class="tariffs__item">
+                <div class="tariffs__item-content tariffs__item-content-1">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-1.png" alt="tariffs-1">
+                </div>
+                <h6 class="tariffs__item-title">Initial</h6>
+                <p class="tariffs__item-text">
+                    Get started with basic features
+                </p>
+                <div class="tariffs__item-price"><span class="tariffs__item-price-num">$0</span>/free
+        
+                </div>
+                <button class="tariffs__item-btn">
+                    <div class="tariffs__item-btn-inner eng_tariffs__item-btn-inner">
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Try</a>
+    
+                        <div class="tariffs__item-btn-content tariffs__item-btn-content--1">
+                            <div class="btn-content-item tariffs__item-btn-content-item tariffs__item-btn-content-item-img--1">
+                                <div class="tariffs__item-btn-content-item-img" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tariffs__btn-arrow tariffs__btn-arrow--1"></div>
+                
+                            <ul class="submenu__btn-tariff submenu__btn--1">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">What features does it include?</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Limited number of requests per month</li>
+                        <li class="tariffs__item-info-item">3 connected tools from basic, 30 interactions/month</li>
+                        <li class="tariffs__item-info-item">The level of communication and understanding of tasks - GPT2</li>
+                        <li class="tariffs__item-info-item">1 user</li>
+                        <li class="tariffs__item-info-item">1 active business process</li>
+                        <a class="tariffs__item-info-more opacity" >Show more</a>
+                    </ul>
+                   
+                </div>
+            </div>
+
+            <div class="tariffs__item">
+                <div class="tariffs__item-content">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-2.png" alt="tariffs-2">
+                </div>
+                <h6 class="tariffs__item-title">Standard</h6>
+                <p class="tariffs__item-text">
+                    Chatbot for large teams and corporations
+                </p>
+                <div class="tariffs__item-price"><span class="tariffs__item-price-num tariffs__item-price-num--off">$30</span><span class="tariffs__item-price-num--before">$35</span><span class="tariffs__item-price-mouth">/month</span>
+                <br><p class="tariffs__item-price-info">$360/year</p>
+                </div>
+                <button class="tariffs__item-btn">
+                    <div class="tariffs__item-btn-inner eng_tariffs__item-btn-inner">
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Try</a>
+    
+                        <div class="tariffs__item-btn-content tariffs__item-btn-content--2">
+                            <div class="btn-content-item tariffs__item-btn-content-item" >
+                                <div class="tariffs__item-btn-content-item-img tariffs__item-btn-content-item-img--2" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tariffs__btn-arrow tariffs__btn-arrow--2"></div>
+                
+                            <ul class="submenu__btn-tariff submenu__btn--2">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">What features does it include?</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Additional users ($20/month)</li>
+                        <li class="tariffs__item-info-item">The volume of long-term memory is 500 MB</li>
+                        <li class="tariffs__item-info-item">The level of communication and understanding of tasks - GPT3.5</li>
+                        <li class="tariffs__item-info-item">Connection of role packages (virtual employees)</li>
+                        <li class="tariffs__item-info-item">Test period - 5 days</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tariffs__item">
+                <div class="tariffs__item-content tariffs__item-content--active">
+                    <div class="tariffs__item-top">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-3.png" alt="tariffs-3">
+                </div>
+                <div class="tariffs__item-proposal">The most popular</div>
+            </div>
+                <h6 class="tariffs__item-title" >Pro</h6>
+                <p class="tariffs__item-text">A chatbot for your business</p>
+                <div class="tariffs__item-price" ><span class="tariffs__item-price-num tariffs__item-price-num--off">$50</span><span class="tariffs__item-price-num--before tariffs__item-price-num--before-checked">$57</span><span class="tariffs__item-price-mouth">/month</span>
+                <br><p class="tariffs__item-price-info">$600/year</p>
+                </div>
+                <button class="tariffs__item-btn">
+                    <div class="tariffs__item-btn-inner eng_tariffs__item-btn-inner">
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Try</a>
+    
+                        <div class="tariffs__item-btn-content tariffs__item-btn-content--3">
+                            <div class="btn-content-item tariffs__item-btn-content-item" >
+                                <div class="tariffs__item-btn-content-item-img tariffs__item-btn-content-item-img--3" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tariffs__btn-arrow tariffs__btn-arrow--3"></div>
+                
+                            <ul class="submenu__btn-tariff submenu__btn--3">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">What features does it include?</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item tariff_benefit">Additional users ($40/month)</li>
+                        <li class="tariffs__item-info-item tariff_benefit">The volume of long-term memory is 1 GB</li>
+                        <li class="tariffs__item-info-item tariff_benefit">The level of communication and understanding of tasks - GPT4</li>
+                        <li class="tariffs__item-info-item tariff_benefit">Managing the skill set of virtual employees</li>
+                        <li class="tariffs__item-info-item tariff_benefit">Self-adjustment of business processes</li>
+                        <a class="tariffs__item-info-more opacity" >Show more</a>
+                    </ul>
+                
+                </div>
+            </div>
+
+            <div class="tariffs__item ">
+                <div class="tariffs__item-content">
+                <div class="tariffs__item-images">
+                    <img class="tariffs__item-img" src="images/icons/tariffs-4.png" alt="tariffs-4">
+                </div>
+                <h6 class="tariffs__item-title">Corporate</h6>
+                <p class="tariffs__item-text">
+                    For businesses that need additional support and security
+                </p>
+                <div class="tariffs__item-connection">
+                    <div class="tariffs__item-connection-images">
+                        <img class="tariffs__item-connection-img" src="images/icons/connection.png" alt="connection">
+                    </div>
+                    <p class="tariffs__item-connection-text">/contact us</p>
+                </div>
+                <button class="tariffs__item-btn tariffs__item-connection-btn" style="font-size: 13px;">
+                    Contact for an estimate
+                </button>
+                </div>
+                <div class="tariffs__item-info">
+                    <h6 class="tariffs__item-info-title">External bots as a service</h6>
+                    <ul class="tariffs__item-info-list">
+                        <li class="tariffs__item-info-item">Specific agents</li>
+                        <li class="tariffs__item-info-item">Сspecific agents</li>
+                        <li class="tariffs__item-info-item">Own rules of context formation</li>
+                        <li class="tariffs__item-info-item">Formation of an individual AI model</li>
+                        <li class="tariffs__item-info-item">Diversified businesses with different contexts</li>
+                        <a class="tariffs__item-info-more opacity">Show more</a>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="reviews">
+    <div class="container">
+    <div class="reviews__wrapper">
+        <h2 class="reviews__title">Reviews</h2>
+        <p class="reviews__subtitle">Our free chatbot starter plan is great for trying out BizAI. Purchase a paid chatbot plan to get more features</p>
+        <div class="reviews__inner">
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <div class="reviews__item-inner">
+                <p class="reviews__item-text">
+                    He really exceeded my expectations. Thanks to this bot, we were able to automate many processes in our company and significantly increase work efficiency.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-1.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">iDeals</p>
+                        <p class="reviews__item-author-about">Provider of virtual data rooms</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <div class="reviews__item-inner">
+                <p class="reviews__item-text">
+                    The chatbot significantly improved the workflow in our company, increasing productivity and reducing the number of errors. We are very happy with the results and recommend it.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-2.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">IT Craft</p>
+                        <p class="reviews__item-author-about">Development of web and mobile applications</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <div class="reviews__item-inner">
+                <p class="reviews__item-text">
+                    This chatbot has proven to be extremely useful for our company, helping us to provide efficient problem solving in our daily routine.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-3.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">Aspire Global</p>
+                        <p class="reviews__item-author-about">iGaming solutions provider</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <div class="reviews__item-inner">
+                <p class="reviews__item-text">
+                    He really exceeded my expectations. Thanks to this bot, we were able to automate many processes in our company and significantly increase work efficiency.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-1.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">iDeals</p>
+                        <p class="reviews__item-author-about">Provider of virtual data rooms</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <div class="reviews__item-inner">
+                <p class="reviews__item-text">
+                    The chatbot significantly improved the workflow in our company, increasing productivity and reducing the number of errors. We are very happy with the results and recommend it.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-2.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">IT Craft</p>
+                        <p class="reviews__item-author-about">Development of web and mobile applications</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item__images">
+                    <img class="reviews__item-img" src="images/decor/reviews.png" alt="reviews__item">
+                </div>
+                <div class="reviews__item-inner">
+                <p class="reviews__item-text">
+                    This chatbot has proven to be extremely useful for our company, helping us to provide efficient problem solving in our daily routine.
+                </p>
+                <div class="reviews__item-author">
+                    <div class="reviews__item-author-images">
+                        <img class="reviews__item-author-img" src="images/reviews-3.png" alt="reviews-1">
+                    </div>
+                    <div class="reviews__item-author-content">
+                        <p class="reviews__item-author-name">Aspire Global</p>
+                        <p class="reviews__item-author-about">iGaming solutions provider</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="articles">
+    <div class="container">
+    <div class="articles__top">
+        <h2 class="articles__title">News and articles</h2>
+        <a class="articles__more" href="#">See all</a>
+    </div>
+        <div class="articles__inner">
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">June 17, 2023</p>
+                <div class="articles__item-title">
+                <a class="articles__item-link" href="#">
+                    Improving customer service with intelligent virtual...
+                </a>
+                </div>
+                <p class="articles__item-text">
+                    When developing our solution, we at BizAI looked for artificial intelligence technology that…
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">June 16, 2023
+                </p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        How to use a chatbot for commercial real estate - a comprehensive guide
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Conversational AI solutions for customer service have come a long way…
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">June 15, 2023</p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        How do conversational AI chatbots help businesses?
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Conversational AI for business has changed the game by revolutionizing…
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">June 17, 2023</p>
+                <div class="articles__item-title">
+                <a class="articles__item-link" href="#">
+                    Improving customer service with intelligent virtual...
+                </a>
+                </div>
+                <p class="articles__item-text">
+                    When developing our solution, we at BizAI looked for artificial intelligence technology that…
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">June 16, 2023
+                </p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        How to use a chatbot for commercial real estate - a comprehensive guide
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Conversational AI solutions for customer service have come a long way…
+                </p>
+            </div>
+
+            <div class="articles__item">
+                <div class="articles__item-images">
+                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
+                </div>
+                <p class="articles__item-data">June 15, 2023</p>
+                <div class="articles__item-title">
+                    <a class="articles__item-link" href="#">
+                        How do conversational AI chatbots help businesses?
+                    </a>
+                    </div>
+                <p class="articles__item-text">
+                    Conversational AI for business has changed the game by revolutionizing…
+                </p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<div class="container">
+<footer class="footer">
+ 
+        <div class="footer__wrapper">
+        <h2 class="footer__title">BizAI is constantly learning and understands the context of the enterprise</h2>
+        
+        <div class="footer__btn btn">
+            <div class="header__btn-inner">
+            <div class="header__btn-item">
+                <a class="btn-link" href="http://t.me/BizAI_es_bot">Почати тестування</a>
+            </div>
+            <div class="btn-wrapper">
+                <div class="btn-content--footer">
+                <div class="btn-content-item btn-content-item--footer" >
+                    <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+                </div>
+                <div class="btn-arrow--footer"></div>
+
+                <ul class="submenu__btn--footer">
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
+                            <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer__content">
+            <div class="footer__content-item footer__content-item--logo">
+                <div class="footer__content-item-images">
+                    <img class="footer__content-item-img" src="images/footer-logo.png" alt="logo">
+                </div>
+                <p class="footer__content-item-text">
+                    Discover a new, convenient functionality that will greatly simplify your operational activities.
+                </p>
+                <div class="footer__content-item-linkbox">
+                    <div class="footer__content-item-linkbox-images opacity">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/linkedin.png" alt="linkedin">
+                    </a>
+                    </div>
+                    <div class="footer__content-item-linkbox-images opacity">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/facebook.png" alt="facebook">
+                    </a>
+                    </div>
+                    <div class="footer__content-item-linkbox-images">
+                        <a class="footer__content-item-linkbox-link" href="http://t.me/BizAI_support_bot">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/telegram.png" alt="telegram">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content-item footer__content-item--company">
+                <h6 class="footer__content-item-title">Company</h6>
+                <ul class="footer__content-item-list">
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#">About us</a>
+                    </li>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#">To investors</a>
+                    </li>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#tarif">To the developers</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#tariffs">Prices</a>
+                    </li>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-item footer__content-item--application">
+                <h6 class="footer__content-item-title">Application</h6>
+                <ul class="footer__content-item-list">
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#employees">Virtual employees</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#chat-bot">chat bots</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-item">
+                <h6 class="footer__content-item-title">Support</h6>
+                <div class="footer__content-item-socials">
+                    <div class="footer__content-item-socials-item">
+                        <a class="footer__content-item-socials-link" href="http://t.me/BizAI_support_bot">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-telegram.png" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-viber.png" alt="viber">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-whatsapp.png" alt="whatsapp">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-messenger.png" alt="messenger">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-slack.png" alt="slack">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p class="footer__copy-copyright">© 2023 BizAI. All rights reserved.</p>
+            <div class="footer__copy-conditions opacity">
+                <a class="footer__copy-link" href="#">Terms and Privacy</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</div>
+</div>
+<!-- <script>
+let isMobile = {
+	Android: function() {return navigator.userAgent.match(/Android/i);},
+	BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+	iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+	Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+};
+		let body=document.querySelector('body');
+if(isMobile.any()){
+		body.classList.add('touch');
+		let arrow=document.querySelectorAll('.arrow');
+	for(i=0; i<arrow.length; i++){
+			let thisLink=arrow[i].previousElementSibling;
+			let subMenu=arrow[i].nextElementSibling;
+			let thisArrow=arrow[i];
+
+			thisLink.classList.add('parent');
+		arrow[i].addEventListener('click', function(){
+			subMenu.classList.toggle('open');
+			thisArrow.classList.toggle('active');
+		});
+	}
+}else{
+	body.classList.add('mouse');
+}
+</script>
+ -->
+
+<script>
+    document.querySelector('.burger').addEventListener('click', function(){
+        this.classList.toggle('active');
+        document.querySelector('.header__menu').classList.toggle('.header__menu-open');
+    })
+</script>
+   
+ <script>
+ function eng_readMore() {
+   var dots = document.getElementById("eng-dots");
+   var btn = document.getElementById("eng-btn");
+   var more = document.getElementById("eng-more");
+
+   if(dots.style.display === "none"){
+      dots.style.display="inline";
+      btn.innerHTML="see all";
+      more.style.display="none"; 
+   } else {
+      dots.style.display="none";
+      btn.innerHTML="hide";
+      more.style.display="inline";
+   }
+}
+</script>  
+
+<script>
+    function eng_readMore1() {
+      var dots1 = document.getElementById("eng-dots1");
+      var btn1 = document.getElementById("eng-btn1");
+      var more1 = document.getElementById("eng-more1");
+      if(dots1.style.display === "none"){
+         dots1.style.display="inline";
+         btn1.innerHTML="see all";
+         more1.style.display="none";
+      } else {
+         dots1.style.display="none";
+         btn1.innerHTML="hide";
+         more1.style.display="inline";
+         security.style.display="none";
+      }
+   }
+   </script>  
+
+
+
+<script src="'js/jquery.fancybox.min.js',"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script> 
+
+
+
+  <!-- <script type="module">
+    const easySetup = require("easy-toggler");
+    easySetup();
+  </script> -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
+
