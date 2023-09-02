@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BizAi</title>
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/app/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/app/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/app/images/favicon-16x16.png">
+    <link rel="manifest" href="/app/site.webmanifest">
+    <link rel="icon" href="/app/favicon.ico">
+
+    <link rel="shortcut icon" href="/app/favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +25,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/slick.css">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,7 +41,7 @@
 
             <ul class="header__menu-list">
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link opacity" href="#">Про нас</a>
+                    <a class="header__menu-list-link" href="about-us.html">Про нас</a>
                 </li>
                 <li class="header__menu-list-item">
                     <a class="header__menu-list-link" href="#product">Продукт</a>
@@ -48,7 +60,7 @@
                     </ul>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link opacity" href="#">Розробникам</a>
+                    <a class="header__menu-list-link" href="#">Розробникам</a>
                 </li>
                 <li class="header__menu-list-item">
                     <a class="header__menu-list-link" href="#tariffs">Ціни</a>
@@ -61,11 +73,12 @@
                         </div>
             
                             <div class="btn-content">
+                                <div class="btn-content__inner">
                             <div class="btn-content-item" >
                                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
                             </div>
-                            <div class="btn-arrow"></div>
-            
+                            <div class="btn-arrow"></div>   
+                        </div>             
                             <ul class="submenu__btn">
                                 <li class="submenu__btn-item">
                                     <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
@@ -112,10 +125,12 @@
                 <div class="lang-menu__item-wrapper">
                     <div class="lang-menu__item">
                 <div class="lang-menu__images">
+                    <a class="lang-menu__link" href="index.html">
                     <img class="lang-menu__img" src="images/icons/lang-ua.png" alt="ua">
+                </a>
                 </div>
                 <div class="lang-menu__name">
-                    <a class="lang-menu__link" href="#">Укр</a>
+                    <a class="lang-menu__link" href="index.html">Українська</a>
                 </div>
             </div>
             </div>
@@ -127,43 +142,43 @@
             </a>
             </div>
             <div class="lang-menu__name">
-                <a class="lang-menu__link" href="index-eng.html">Eng</a>
+                <a class="lang-menu__link" href="index-eng.html">English</a>
             </div>
         </div>
         </div>
         <div class="lang-menu__item-wrapper">
-            <div class="lang-menu__item opacity">
+            <div class="lang-menu__item">
         <div class="lang-menu__images">
-            <a class="lang-menu__link" href="#">
-            <img class="lang-menu__img" src="images/icons/lang-canada.png" alt="ua">
+            <a class="lang-menu__link" href="index-germ.html">
+            <img class="lang-menu__img" src="images/icons/lang-germ.png" alt="germ">
             </a>
         </div>
         <div class="lang-menu__name">
-            <a class="lang-menu__link" href="#">Канада</a>
+            <a class="lang-menu__link" href="index-germ.html">Deutsch</a>
         </div>
     </div>
     </div>
     <div class="lang-menu__item-wrapper">
-        <div class="lang-menu__item opacity">
+        <div class="lang-menu__item">
     <div class="lang-menu__images">
-        <a class="lang-menu__link" href="#">
-        <img class="lang-menu__img" src="images/icons/lang-gb.png" alt="ua">
+        <a class="lang-menu__link" href="index-spain.html">
+        <img class="lang-menu__img" src="images/icons/langspain.png" alt="spain">
         </a>
     </div>
     <div class="lang-menu__name">
-        <a class="lang-menu__link" href="#">Британія</a>
+        <a class="lang-menu__link" href="index-spain.html">Español</a>
     </div>
 </div>
 </div>
 <div class="lang-menu__item-wrapper">
-    <div class="lang-menu__item opacity">
+    <div class="lang-menu__item">
 <div class="lang-menu__images">
-    <a class="lang-menu__link" href="#">
-    <img class="lang-menu__img" src="images/icons/lang-aus.png" alt="ua">
+    <a class="lang-menu__link" href="index-france.html">
+    <img class="lang-menu__img" src="images/icons/lang-france.png" alt="france">
     </a>
 </div>
 <div class="lang-menu__name">
-    <a class="lang-menu__link" href="#">Австралія</a>
+    <a class="lang-menu__link" href="index-france.html">Français</a>
 </div>
 </div> 
 </div>
@@ -220,7 +235,7 @@
                 <span></span>
               </button>
 
-              <button class="information-btn" easy-toggle="#modal" easy-class="show" easy-rcoe> 
+              <!-- <button class="information-btn" easy-toggle="#modal" easy-class="show" easy-rcoe> 
                 <div class="information-btn__wrapper">?</div>
             </button>
                 <div class="modal" id="modal">
@@ -229,7 +244,7 @@
                         <button class="modal__window-close" easy-toggle="#modal" easy-class="close" easy-rcoe>X</button>
                     </div>
                     <div class="modal__overlay" easy-toggle="#modal" easy-class="show" easy-rcoe></div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -238,9 +253,11 @@
    
 
 </header>
+<main class="main">
  <section class="top">
     <div class="container">
     <h1 class="top__title"><span class="top__title-center">Керований <span class="top__title-blue"> ШІ бізнес-асистент</span></span><span class="top__title-left">для підвищення продуктивності </span><span class="top__title-right">та виконання бекофісної рутини</span></h1>
+    <p class="top__info">Вибачте, це ще тільки прототип. Але ми активно працюємо, щоб скоріше надати усю потрібну Вам інформацію.</p>
 </div>
 <div class="container-min top__images">
     <img class="top__img" src="images/top.png" alt="top">
@@ -359,7 +376,7 @@
     <div class="container">
         <div class="introduction__inner">
             <div class="introduction__video">
-                <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=BY9T0pXU1NM">
+                <a data-fancybox="video-gallery" href="#">
                    <img class="video_video-icon" src="images/icons/play-button.png" alt="Play video icon">
                 </a>
              </div>
@@ -485,7 +502,7 @@
             </label>
             <div class="tariffs__tariff-box">
             <p class="tariffs__tariff-text">Оплата за рік</p>
-            <div class="tariffs__tariff-promotion">знижка 10%</div>
+            <div class="tariffs__tariff-promotion">знижка від 10%</div>
         </div>
         </div>
         <div class="tariffs__inner">
@@ -496,7 +513,7 @@
                 </div>
                 <h6 class="tariffs__item-title">Початковий</h6>
                 <p class="tariffs__item-text">
-                    Почати роботу з базовими функціями
+                    Почати роботу з персональним асистентом
                 </p>
                 <div class="tariffs__item-price"><span class="tariffs__item-price-num">$0</span><span class="tariffs__item-price-mouth">/безкоштовно</span>
         
@@ -567,7 +584,7 @@
                 </div>
                 <h6 class="tariffs__item-title">Стандартний</h6>
                 <p class="tariffs__item-text">
-                    Чат-бот для великих команд та корпорацій
+                    Чат-боти для малого бізнесу
                 </p>
                 <div class="tariffs__item-price"><span class="tariffs__item-price-num tariffs__item-price-num--off">$30</span><span class="tariffs__item-price-num--before">$35</span><span class="tariffs__item-price-mouth">/місяць</span>
                 <br><p class="tariffs__item-price-info">$360/рік</p>
@@ -640,7 +657,7 @@
                 <div class="tariffs__item-proposal">Найбільш популярний</div>
             </div>
                 <h6 class="tariffs__item-title" >Про</h6>
-                <p class="tariffs__item-text">Чат-бот для вашого бізнесу</p>
+                <p class="tariffs__item-text">Чат-боти для активного розвитку бізнесу</p>
                 <div class="tariffs__item-price" ><span class="tariffs__item-price-num tariffs__item-price-num--off">$50</span><span class="tariffs__item-price-num--before tariffs__item-price-num--before-checked">$57</span><span class="tariffs__item-price-mouth">/місяць</span>
                 <br><p class="tariffs__item-price-info">$600/рік</p>
                 </div>
@@ -710,7 +727,7 @@
                 </div>
                 <h6 class="tariffs__item-title">Корпоративний</h6>
                 <p class="tariffs__item-text">
-                    Для підприємств, яким потрібна додаткова підтримка і безпека
+                    Для підприємств, яким потрібні широкі можливості та підвищена безпека
                 </p>
                 <div class="tariffs__item-connection">
                     <div class="tariffs__item-connection-images">
@@ -725,7 +742,7 @@
                 <div class="tariffs__item-info">
                     <h6 class="tariffs__item-info-title">Зовнішні боти як сервіс</h6>
                     <ul class="tariffs__item-info-list">
-                        <li class="tariffs__item-info-item">Специфічні агенти</li>
+                        <li class="tariffs__item-info-item">Зовніші боти як сервіс</li>
                         <li class="tariffs__item-info-item">Специфічні агенти</li>
                         <li class="tariffs__item-info-item">Власні правила формування контексту</li>
                         <li class="tariffs__item-info-item">Формування індивідуальної моделі ШІ</li>
@@ -875,16 +892,16 @@
     <div class="container">
     <div class="articles__top">
         <h2 class="articles__title">Новини та статті</h2>
-        <a class="articles__more" href="#">Подивитсь все</a>
+        <a class="articles__more" href="#">Подивитись все</a>
     </div>
         <div class="articles__inner">
             <div class="articles__item">
                 <div class="articles__item-images">
-                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
+                    <a class="articles__item-link" href="singlepost.html"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
                 </div>
                 <p class="articles__item-data">17 червня 2023</p>
                 <div class="articles__item-title">
-                <a class="articles__item-link" href="#">
+                <a class="articles__item-link" href="singlepost.html">
                     Покращення обслуговування клієнтів за допомогою інтелектуального віртуального...
                 </a>
                 </div>
@@ -895,12 +912,12 @@
 
             <div class="articles__item">
                 <div class="articles__item-images">
-                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
+                    <a class="articles__item-link" href="singlepost.html"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
                 </div>
                 <p class="articles__item-data">16 червня 2023
                 </p>
                 <div class="articles__item-title">
-                    <a class="articles__item-link" href="#">
+                    <a class="articles__item-link" href="singlepost.html">
                         Як використовувати чат-бот для комерційної нерухомості – вичерпний посібник
                     </a>
                     </div>
@@ -911,11 +928,11 @@
 
             <div class="articles__item">
                 <div class="articles__item-images">
-                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
+                    <a class="articles__item-link" href="singlepost.html"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
                 </div>
                 <p class="articles__item-data">15 червня 2023</p>
                 <div class="articles__item-title">
-                    <a class="articles__item-link" href="#">
+                    <a class="articles__item-link" href="singlepost.html">
                         Як чат-боти розмовного штучного інтелекту допомагають бізнесу?
                     </a>
                     </div>
@@ -926,11 +943,11 @@
 
             <div class="articles__item">
                 <div class="articles__item-images">
-                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
+                    <a class="articles__item-link" href="singlepost.html"><img class="articles__item-img" src="images/articles-1.png" alt="articles"></a>
                 </div>
                 <p class="articles__item-data">17 червня 2023</p>
                 <div class="articles__item-title">
-                <a class="articles__item-link" href="#">
+                <a class="articles__item-link" href="singlepost.html">
                     Покращення обслуговування клієнтів за допомогою інтелектуального віртуального...
                 </a>
                 </div>
@@ -941,12 +958,12 @@
 
             <div class="articles__item">
                 <div class="articles__item-images">
-                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
+                    <a class="articles__item-link" href="singlepost.html"><img class="articles__item-img" src="images/articles-2.png" alt="articles"></a>
                 </div>
                 <p class="articles__item-data">16 червня 2023
                 </p>
                 <div class="articles__item-title">
-                    <a class="articles__item-link" href="#">
+                    <a class="articles__item-link" href="singlepost.html">
                         Як використовувати чат-бот для комерційної нерухомості – вичерпний посібник
                     </a>
                     </div>
@@ -957,11 +974,11 @@
 
             <div class="articles__item">
                 <div class="articles__item-images">
-                    <a class="articles__item-link"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
+                    <a class="articles__item-link" href="singlepost.html"><img class="articles__item-img" src="images/articles-3.png" alt="articles"></a>
                 </div>
                 <p class="articles__item-data">15 червня 2023</p>
                 <div class="articles__item-title">
-                    <a class="articles__item-link" href="#">
+                    <a class="articles__item-link" href="singlepost.html">
                         Як чат-боти розмовного штучного інтелекту допомагають бізнесу?
                     </a>
                     </div>
@@ -972,6 +989,7 @@
         </div>
     </div>
 </section> 
+</main>
 
 <div class="container">
 <footer class="footer">
@@ -1206,7 +1224,7 @@ if(isMobile.any()){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/slick.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script> 
+
 
 
 
@@ -1218,11 +1236,6 @@ if(isMobile.any()){
 </body>
 
 </html>
-
-
-
-
-
 
 
 
