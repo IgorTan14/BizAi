@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizAi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/single-post.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="container">
+    <div class="header__inner">
+        <a class="header__logo" href="index.html">
+            <img class="header__img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="header__menu">
+
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link opacity" href="#">Про нас</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link" href="#product">Продукт</a>
+                </li>
+                    <li class="header__menu-list-item header__menu-list-item--more">
+                    <span class="header__menu-list-link header__menu-list-link--more">Застосування </span>
+                    <span class="sub-menu__arrow sub-menu__arrow-menu"></span>
+          
+                        <ul class="submenu__header-list" id="drop-menu">
+                        <li class="submenu__header-item">
+                            <a class="submenu__header-link" href="#employees">Віртуальні співробітники</a>
+                        </li>
+                        <li class="submenu__header-item">
+                            <a class="submenu__header-link" href="#chat-bot">Чат-боти</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link opacity" href="#">Розробникам</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a class="header__menu-list-link" href="#tariffs">Ціни</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <div class="header__btn btn header__menu-list-item-btn">
+                        <div class="header__btn-inner">
+                        <div class="header__btn-item">
+                            <a class="btn-link" href="http://t.me/BizAI_es_bot">Тест драйв</a>
+                        </div>
+            
+                            <div class="btn-content">
+                            <div class="btn-content-item" >
+                                <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+                            </div>
+                            <div class="btn-arrow"></div>
+            
+                            <ul class="submenu__btn">
+                                <li class="submenu__btn-item">
+                                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
+                                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#" >
+                                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                                    </a>
+                                </li>
+                                <li class="submenu__btn-item submenu__btn-item--off">
+                                    <a class="submenu__btn-link" href="#">
+                                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+       
+            <div class="header__lang">
+            <div class="header__lang-inner">
+            <div class="header__lang-images">
+                <img class="header__lang-img" src="images/icons/lang-ua.png" alt="ua">
+            </div>
+            <div class="sub-menu__arrow header__lang-arr"></div>
+        </div>
+        <div class="lang-menu">
+            <div class="lang-menu__inner">
+                <div class="lang-menu__item-wrapper">
+                    <div class="lang-menu__item">
+                <div class="lang-menu__images">
+                    <a class="lang-menu__link" href="index.html">
+                    <img class="lang-menu__img" src="images/icons/lang-ua.png" alt="ua">
+                </a>
+                </div>
+                <div class="lang-menu__name">
+                    <a class="lang-menu__link" href="index.html">Українська</a>
+                </div>
+            </div>
+            </div>
+            <div class="lang-menu__item-wrapper">
+                <div class="lang-menu__item">
+            <div class="lang-menu__images">
+                <a class="lang-menu__link" href="index-eng.html">
+                <img class="lang-menu__img" src="images/icons/lang-eng.png" alt="ua">
+            </a>
+            </div>
+            <div class="lang-menu__name">
+                <a class="lang-menu__link" href="index-eng.html">English</a>
+            </div>
+        </div>
+        </div>
+        <div class="lang-menu__item-wrapper">
+            <div class="lang-menu__item">
+        <div class="lang-menu__images">
+            <a class="lang-menu__link" href="index-germ.html">
+            <img class="lang-menu__img" src="images/icons/lang-germ.png" alt="germ">
+            </a>
+        </div>
+        <div class="lang-menu__name">
+            <a class="lang-menu__link" href="index-germ.html">Deutsch</a>
+        </div>
+    </div>
+    </div>
+    <div class="lang-menu__item-wrapper">
+        <div class="lang-menu__item">
+    <div class="lang-menu__images">
+        <a class="lang-menu__link" href="index-spain.html">
+        <img class="lang-menu__img" src="images/icons/langspain.png" alt="spain">
+        </a>
+    </div>
+    <div class="lang-menu__name">
+        <a class="lang-menu__link" href="index-spain.html">Español</a>
+    </div>
+</div>
+</div>
+<div class="lang-menu__item-wrapper">
+    <div class="lang-menu__item">
+<div class="lang-menu__images">
+    <a class="lang-menu__link" href="index-france.html">
+    <img class="lang-menu__img" src="images/icons/lang-france.png" alt="france">
+    </a>
+</div>
+<div class="lang-menu__name">
+    <a class="lang-menu__link" href="index-france.html">Français</a>
+</div>
+</div> 
+</div>
+        </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="header__btn btn">
+        <div class="header__btn-inner">
+        <div class="header__btn-item">
+            <a class="btn-link" href="http://t.me/BizAI_es_bot">Тест драйв</a>
+        </div>
+
+        <div class="btn-content">
+            <div class="btn-content-item" >
+                <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+            </div>
+            <div class="btn-arrow"></div>
+
+            <ul class="submenu__btn">
+                <li class="submenu__btn-item">
+                    <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot" target="_top">
+                        <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                    </a>
+                </li>
+                <li class="submenu__btn-item submenu__btn-item--off">
+                    <a class="submenu__btn-link" href="#">
+                        <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+</div>
+        <div class="burger__wrapper" style="margin: auto 0;">
+            <button class="burger">
+                <span></span>
+              </button>
+
+              <!-- <button class="information-btn" easy-toggle="#modal" easy-class="show" easy-rcoe> 
+                <div class="information-btn__wrapper">?</div>
+            </button>
+                <div class="modal" id="modal">
+                    <div class="modal__window">
+                        <p>Вибачте, це ще тільки прототип. Але ми активно працюємо, щоб скоріше надати усю потрібну Вам інформацію.</p>
+                        <button class="modal__window-close" easy-toggle="#modal" easy-class="close" easy-rcoe>X</button>
+                    </div>
+                    <div class="modal__overlay" easy-toggle="#modal" easy-class="show" easy-rcoe></div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    
+    <div class="container">
+<section class="blog-page">
+        <div class="blog-page__content">
+            <div class="blog-page__item single-post__item">
+                <img class="blog-page__img" src="images/articles-1.png" alt="blog-1">
+                <div class="blog-page__item-info">
+                    August 15, 2022 | by Ann Summers | Bedroom Furniture
+                </div>
+                <h4 class="blog-page__item-title"><a class="blog-page__item-link" href="#">Red selfies edison bulb four dollar toast humblebrag for the furniture</a></h4>
+                <p class="blog-page__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+                </p>
+                <!-- <blockquote class="single-post__blockquote">
+                    <p class="blog-page__blockquote-text single-post__blockquote-text">
+                        “Simplicity is not the goal. It is the by-product of a good idea and modest expectations” 
+                    </p>
+                    <p class="blog-page__blockquote-author">Paul Rand</p>
+                </blockquote>
+                <p class="blog-page__item-text">
+                    Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+                    Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+                </p> -->
+            </div>
+            
+            <section class="single-post__tags">
+                <h4 class="single-post__tags-title">Tags</h4>
+                <div class="single-post__tags-items">
+                <div class="single-post__tags-item">
+                    <a class="single-post__tags-tag" href="#">Bedroom furniture</a>
+                </div>
+                <div class="single-post__tags-item">
+                    <a class="single-post__tags-tag" href="#">Office furniture</a>
+                </div>
+                <div class="single-post__tags-item">
+                    <a class="single-post__tags-tag" href="#">Dining room futniture</a>
+                </div>
+                <div class="single-post__tags-item">
+                    <a class="single-post__tags-tag" href="#">Chair</a>
+                </div>
+            </div>
+                <!-- <div class="single-post__tags-links">
+                        <a class="single-post__tags-links-link single-post__tags-links-link-left" href="#">
+                            Cred selfies edison bulb four dollar toast humblebrag
+                        </a>
+                        <a class="single-post__tags-links-link single-post__tags-links-link-right" href="#">
+                            Semiotics fixie four dollar toast, next level
+                        </a>
+                </div> -->
+            </section>
+            <section class="comments">
+                <h4 class="comments__title">Comments:</h4>
+                <div class="comments-items">
+                <div class="comments-item">
+                    <img class="comments-item__avatar" src="images/icons/avatar-1.jpg" alt="avatar">
+                    <div class="comments-item__content">
+                        <div class="comments-item__top">
+                            <h6 class="comments-item__name">Lea Brown</h6>
+                            <button class="comments-item__btn">Reply</button>
+                        </div>
+                        <p class="comments-item__date">August 12, 2020</p>
+                    <p class="comments-item__text">
+                        Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="post-comment">
+                <h5 class="post-comment__title">Post a Comment</h5>
+                <form class="post-comment__form" action="#">
+                    <textarea class="post-comment__textarea" name="#" id="#" cols="30" rows="10" placeholder="Your comment"></textarea>
+                        <div class="post-comment__info">
+                    <input class="post-comment__input" type="text" placeholder="Your name">
+                    <input class="post-comment__input" type="text" placeholder="Your e-mail">
+                        </div>
+                        <div class="post-comment__bottom">
+                    <div class="post-comment__remember-me">
+                        <input class="post-comment__checkbox" type="checkbox">
+                        <p class="post-comment__remember-me-text">Remember me</p>
+                    </div>
+                    <button class="post-comment__btn">Submit</button>
+                </div>
+                </form>
+            </div>
+            </section>
+    </div>
+        <div class="blog-page__filter">
+            <form class="blog-page__filter-form" action="#">
+                <input class="blog-page__filter-search" type="text" placeholder="Search">
+                <button class="blog-page__filter-btn">
+                    <img class="blog-page__filter-btn-icon" src="images/icons/search.svg" alt="search icon">
+                </button>
+             </form>
+            <div class="blog-page__filter__categories">
+                <h6 class="blog-page__filter-title">Categories</h6>
+                <div class="blog-page__filter__categories-item">
+                    <a class="blog-page__filter__categories-link" href="#">Dining room (1)</a>
+                </div>
+                <div class="blog-page__filter__categories-item">
+                    <a class="blog-page__filter__categories-link" href="#">Office furniture (12)</a>
+                </div>
+                <div class="blog-page__filter__categories-item">
+                    <a class="blog-page__filter__categories-link" href="#">Simple interiror design (2)</a>
+                </div>
+                <div class="blog-page__filter__categories-item">
+                    <a class="blog-page__filter__categories-link" href="#">Design (4)</a>
+                </div>
+                <div class="blog-page__filter__categories-item">
+                    <a class="blog-page__filter__categories-link" href="#">Bedroom Furniture (1)</a>
+                </div>
+            </div>
+            <div class="blog-page__filter-posts">
+                <h6 class="blog-page__filter-title blog-page__filter-title-posts">Recent Posts</h6>
+                <div class="blog-page__filter-posts-item">
+                    <a class="blog-page__filter-posts-link" href="#">
+                        Cred selfies edison bulb four dollar toast humblebrag
+                    </a>
+                    <div class="blog-page__filter-posts-author">August 10, 2022 | by Ann Summers</div>
+                </div>
+                <div class="blog-page__filter-posts-item">
+                    <a class="blog-page__filter-posts-link" href="#">
+                        Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+                    </a>
+                    <div class="blog-page__filter-posts-author">September 30 ,2022 | by Ann Summers</div>
+                </div>
+                <div class="blog-page__filter-posts-item">
+                    <a class="blog-page__filter-posts-link" href="#">
+                        Cred selfies edison bulb four dollar toast humblebrag
+                    </a>
+                    <div class="blog-page__filter-posts-author">May 2, 2022 | by Ann Summers</div>
+                </div>
+            </div>
+                <div class="blog-page__filter-tags">
+                    <h6 class="blog-page__filter-title">Tags</h6>
+                    <div class="blog-page__filter-tags-top">
+                        <a class="blog-page__filter-tag" href="#">Dining room futniture</a>
+                        <a class="blog-page__filter-tag" href="#">Chair</a>
+                        <a class="blog-page__filter-tag" href="#">Table</a>
+                    </div>
+                    <div class="blog-page__filter-tags-bottom">
+                        <a class="blog-page__filter-tag" href="#">Bedroom</a>
+                        <a class="blog-page__filter-tag" href="#">Office Furniture</a>
+                    </div>
+                </div>
+                <div class="blog-page__filter-socials">
+                    <a class="blog-page__filter-social" href="#">
+                        <img class="blog-page__filter-socaial-icon" src="images/icons/facebook.svg" alt="facebook">
+                    </a>
+                    <a class="blog-page__filter-social" href="#">
+                        <img class="blog-page__filter-socaial-icon" src="images/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a class="blog-page__filter-social" href="#">
+                        <img class="blog-page__filter-socaial-icon" src="images/icons/pinterest.svg" alt="pinterest">
+                    </a>
+                    <a class="blog-page__filter-social" href="#">
+                        <img class="blog-page__filter-socaial-icon" src="images/icons//whatsapp.svg" alt="whatsapp">
+                    </a>
+                    <a class="blog-page__filter-social" href="#">
+                        <img class="blog-page__filter-socaial-icon" src="images/icons/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+</section>
+</main>
+ 
+
+<div class="container">
+<footer class="footer">
+ 
+        <div class="footer__wrapper">
+        <h2 class="footer__title">BizAI  - постійно навчається, та розуміє контекст підприємства</h2>
+        
+        <div class="footer__btn btn">
+            <div class="header__btn-inner">
+            <div class="header__btn-item">
+                <a class="btn-link" href="http://t.me/BizAI_es_bot">Почати тестування</a>
+            </div>
+            <div class="btn-wrapper">
+                <div class="btn-content--footer">
+                <div class="btn-content-item btn-content-item--footer" >
+                    <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
+                </div>
+                <div class="btn-arrow--footer"></div>
+
+                <ul class="submenu__btn--footer">
+                    <li class="submenu__btn-item">
+                        <a class="submenu__btn-link" href="http://t.me/BizAI_support_bot">
+                            <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
+                        </a>
+                    </li>
+                    <li class="submenu__btn-item submenu__btn-item--off">
+                        <a class="submenu__btn-link" href="#">
+                            <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer__content">
+            <div class="footer__content-item footer__content-item--logo">
+                <div class="footer__content-item-images">
+                    <img class="footer__content-item-img" src="images/footer-logo.png" alt="logo">
+                </div>
+                <p class="footer__content-item-text">
+                    Відкрийте для себе новий, зручний функціонал, який значно спростить вашу операційну діяльність.
+                </p>
+                <div class="footer__content-item-linkbox">
+                    <div class="footer__content-item-linkbox-images opacity">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/linkedin.png" alt="linkedin">
+                    </a>
+                    </div>
+                    <div class="footer__content-item-linkbox-images opacity">
+                        <a class="footer__content-item-linkbox-link" href="#">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/facebook.png" alt="facebook">
+                    </a>
+                    </div>
+                    <div class="footer__content-item-linkbox-images">
+                        <a class="footer__content-item-linkbox-link" href="http://t.me/BizAI_support_bot">
+                        <img class="footer__content-item-linkbox-img" src="images/icons/telegram.png" alt="telegram">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content-item footer__content-item--company">
+                <h6 class="footer__content-item-title">Компанія</h6>
+                <ul class="footer__content-item-list">
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#">Про нас</a>
+                    </li>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#">Інвесторам</a>
+                    </li>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#tarif">Розробникам</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#tariffs">Ціни</a>
+                    </li>
+                    <li class="footer__content-item-list-item opacity">
+                        <a class="footer__content-item-list-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-item footer__content-item--application">
+                <h6 class="footer__content-item-title">Застосування</h6>
+                <ul class="footer__content-item-list">
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#employees">Віртуальні співробітники</a>
+                    </li>
+                    <li class="footer__content-item-list-item">
+                        <a class="footer__content-item-list-link" href="#chat-bot">Чат-боти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content-item">
+                <h6 class="footer__content-item-title">Підтримка</h6>
+                <div class="footer__content-item-socials">
+                    <div class="footer__content-item-socials-item">
+                        <a class="footer__content-item-socials-link" href="http://t.me/BizAI_support_bot">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-telegram.png" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-viber.png" alt="viber">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-whatsapp.png" alt="whatsapp">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-messenger.png" alt="messenger">
+                    </div>
+                    </div>
+                    <div class="footer__content-item-socials-item opacity">
+                        <div class="footer__content-item-socials-link">
+                        <img class="footer__content-item-socials-img" src="images/icons/social-slack.png" alt="slack">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p class="footer__copy-copyright">© 2023 BizAI. Всі права захищені.</p>
+            <div class="footer__copy-conditions opacity">
+                <a class="footer__copy-link" href="#">Умови та конфіденційність</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</div>
+</div>
+<!-- <script>
+let isMobile = {
+	Android: function() {return navigator.userAgent.match(/Android/i);},
+	BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+	iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+	Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+};
+		let body=document.querySelector('body');
+if(isMobile.any()){
+		body.classList.add('touch');
+		let arrow=document.querySelectorAll('.arrow');
+	for(i=0; i<arrow.length; i++){
+			let thisLink=arrow[i].previousElementSibling;
+			let subMenu=arrow[i].nextElementSibling;
+			let thisArrow=arrow[i];
+
+			thisLink.classList.add('parent');
+		arrow[i].addEventListener('click', function(){
+			subMenu.classList.toggle('open');
+			thisArrow.classList.toggle('active');
+		});
+	}
+}else{
+	body.classList.add('mouse');
+}
+</script>
+57 35
+ --> 
+
+
+
+<script>
+    document.querySelector('.burger').addEventListener('click', function(){
+        this.classList.toggle('active');
+        document.querySelector('.header__menu').classList.toggle('.header__menu-open');
+    })
+</script>
+   
+ <script>
+ function readMore() {
+   var dots = document.getElementById("dots");
+   var btn = document.getElementById("btn");
+   var more = document.getElementById("more");
+
+   if(dots.style.display === "none"){
+      dots.style.display="inline";
+      btn.innerHTML="подивитись все";
+      more.style.display="none"; 
+   } else {
+      dots.style.display="none";
+      btn.innerHTML="приховати";
+      more.style.display="inline";
+   }
+}
+</script>  
+
+<script>
+    function readMore1() {
+      var dots1 = document.getElementById("dots1");
+      var btn1 = document.getElementById("btn1");
+      var more1 = document.getElementById("more1");
+      var security = document.getElementsByClassName("security");
+      if(dots1.style.display === "none"){
+         dots1.style.display="inline";
+         btn1.innerHTML="подивитись все";
+         more1.style.display="none";
+      } else {
+         dots1.style.display="none";
+         btn1.innerHTML="приховати";
+         more1.style.display="inline";
+         security.style.display="none";
+      }
+      security.style.display="none";
+   }
+   </script>  
+
+
+
+<script src="'js/jquery.fancybox.min.js',"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script> 
+
+
+
+  <!-- <script type="module">
+    const easySetup = require("easy-toggler");
+    easySetup();
+  </script> -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
