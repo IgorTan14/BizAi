@@ -165,6 +165,9 @@ line-height: 28px;
 
 .header__btn{
     margin-left: 30px;
+    max-width: 218px;
+    width: 100%;
+    height: 100%;
 }
  .btn {
 	 background-color: #63beff;
@@ -176,7 +179,8 @@ line-height: 28px;
     display: flex;
 }
 .header__btn-item{
-    padding: 17px 16px 17px 24px;
+    /* padding: 17px 16px 17px 24px; */
+    margin: auto;
 }
 .btn-link {
     max-width: 116px;
@@ -234,6 +238,9 @@ background: rgba(255, 255, 255, 0.20);
         align-items: center;
         margin: auto 0;
 }
+.btn-arrow--submenu{
+    left: 208px !important;
+}
 .btn-content--click {
     border-radius: 12px;
     background: #49A5E7;
@@ -250,7 +257,7 @@ background: rgba(255, 255, 255, 0.20);
 .btn-arrow, .btn-arrow--footer{
     position: absolute;
     top: 22px;
-    left: 190px;
+    left: 193px;
     display: inline-flex;
     width: 9px;
     height: 9px;
@@ -1523,7 +1530,7 @@ background-position: center bottom;
 }
 
 .btn-arrow--footer{
-    left: 248px;
+    left: 250px;
 }
 
 .reviews__wrapper {
@@ -1805,12 +1812,17 @@ border-radius: 16px;
 }
 .footer__btn {
     margin: 0 auto;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin-bottom: 100px;
-    max-width: 310px;
+    max-width: 320px;
     width: 100%;
+}
+.footer__btn-inner {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 .submenu__btn--footer{
     /* left: 25px; */
@@ -2209,6 +2221,12 @@ line-height: 28px;
         justify-content: center;
         align-items: center;
         gap: 6px;
+    }
+    .header__menu-list{
+        gap: 35px;
+    }
+    .header__menu {
+        margin-right: 35px;
     }
 }    
 @media (max-width: 1390px){
@@ -3127,7 +3145,13 @@ line-height: 28px;
         padding-right: 0px;
     }
     .header__inner {
-        padding: 30px 0}
+        padding: 30px 0
+    }
+    .btn-content--footer {
+        padding: 13px 0 16px 15px;
+    }
+
+        
 }
 @media (max-width: 365px){
     /* .reviews__item-inner {
@@ -3153,17 +3177,18 @@ line-height: 28px;
         width: 100%;
     }
     
-    .header__btn-item {
+    /* .header__btn-item {
         padding: 15px 0px 15px 0px;
-    }
+   
+    } */
     .btn-arrow--footer {
-        left: 256px;
+        left: 226px;
+        top: 18px !important;
     }
-    .btn-content--click {
-     
+    /* .btn-content--click {
         background: none;
         box-shadow: none;
-    }
+    } */
   
     .top__title--centner{
         font-size: 32px;
@@ -3197,6 +3222,9 @@ line-height: 28px;
     }
     .switch {
         margin: 0 5px;
+    }
+    .btn-content--footer {
+        padding: 16px 0 16px 5px;
     }
 }
 
