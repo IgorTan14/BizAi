@@ -14,6 +14,15 @@
     <link rel="shortcut icon" href="/app/favicon.ico" type="image/x-icon"> -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -41,7 +50,7 @@
 
             <ul class="header__menu-list">
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="about-us.html">Про нас</a>
+                    <a class="header__menu-list-link opacity" href="about-us.html">Про нас</a>
                 </li>
                 <li class="header__menu-list-item">
                     <a class="header__menu-list-link" href="#product">Продукт</a>
@@ -60,7 +69,7 @@
                     </ul>
                 </li>
                 <li class="header__menu-list-item">
-                    <a class="header__menu-list-link" href="#">Розробникам</a>
+                    <a class="header__menu-list-link opacity" href="#">Розробникам</a>
                 </li>
                 <li class="header__menu-list-item">
                     <a class="header__menu-list-link" href="#tariffs">Ціни</a>
@@ -71,13 +80,13 @@
                         <div class="header__btn-item">
                             <a class="btn-link" href="http://t.me/BizAI_es_bot">Тест драйв</a>
                         </div>
-            
+            <div class="btn-wrapper">
                             <div class="btn-content">
                                 <div class="btn-content__inner">
                             <div class="btn-content-item" >
                                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
                             </div>
-                            <div class="btn-arrow"></div>   
+                            <div class="btn-arrow btn-arrow--submenu"></div>   
                         </div>             
                             <ul class="submenu__btn">
                                 <li class="submenu__btn-item">
@@ -107,6 +116,7 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
                         </div>
                     </div>
                 </li>
@@ -193,7 +203,7 @@
         <div class="header__btn-item">
             <a class="btn-link" href="http://t.me/BizAI_es_bot">Тест драйв</a>
         </div>
-
+        <div class="btn-wrapper">
         <div class="btn-content">
             <div class="btn-content-item" >
                 <img class="btn-content-img" src="images/icons/btn-telegram.png" alt="telegram">
@@ -229,6 +239,7 @@
             </ul>
         </div>
         </div>
+        </div>
 </div>
         <div class="burger__wrapper" style="margin: auto 0;">
             <button class="burger">
@@ -257,6 +268,7 @@
  <section class="top">
     <div class="container">
     <h1 class="top__title"><span class="top__title-center">Керований <span class="top__title-blue"> ШІ бізнес-асистент</span></span><span class="top__title-left">для підвищення продуктивності </span><span class="top__title-right">та виконання бекофісної рутини</span></h1>
+    <h1 class="top__title--centner">Керований <span>ШІ бізнес-асистент</span> для підвищення продуктивності та виконання бекофісної рутини</h1>
     <p class="top__info">Вибачте, це ще тільки прототип. Але ми активно працюємо, щоб скоріше надати усю потрібну Вам інформацію.</p>
 </div>
 <div class="container-min top__images">
@@ -393,7 +405,7 @@
     </div>
 </section>
 
-<div class="container-min">
+<div class="container-min container-min--emplyee">
     <section class="employee" id="employees">
         <div class="employee-bg">
     <div class="employee-wrapper">
@@ -406,6 +418,9 @@
             <li class="employee__item employee__item-3">Юрист</li>
             <li class="employee__item employee__item-4">Бухгалтер</li>
         </ul>
+        <div class="employee-image">
+            <img class="employee-img" src="images/employee-bg.png">
+        </div>
         <ul class="employee__right">
             <li class="employee__item employee__item-5">Фінансист</li>
             <li class="employee__item employee__item-6">Маркетолог</li>
@@ -520,10 +535,11 @@
                 </div>
                 <button class="tariffs__item-btn">
                     <div class="tariffs__item-btn-inner">
-                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Спробувати</a>   
+                        <a href="https://t.me/BizAI_es_bot" class="tariffs__item-btn-text">Спробувати</a>
+    
                             <div class="tariffs__item-btn-content tariffs__item-btn-content--1">
-                                <div class="btn-content-item tariffs__item-btn-content-item tariffs__item-btn-content-item-img--1">
-                                    <div class="tariffs__item-btn-content-item-img" >
+                                <div class="btn-content-item tariffs__item-btn-content-item" >
+                                    <div class="tariffs__item-btn-content-item-img tariffs__item-btn-content-item-img--1" >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M17.6191 4.76514L15.2949 15.6343C15.1126 16.409 14.691 16.6141 14.0302 16.2495L10.5097 13.6519L8.80073 15.2925C8.57286 15.5203 8.3336 15.6343 8.08295 15.6343L8.35639 12.0454L14.8847 6.1665C15.0442 6.007 15.0442 5.91585 14.8847 5.89307C14.748 5.84749 14.5999 5.88167 14.4404 5.99561L6.37397 11.0884L2.88764 9.99463C2.50027 9.8807 2.31798 9.7098 2.34077 9.48193C2.36355 9.25407 2.60281 9.06038 3.05854 8.90088L16.6279 3.63721C16.9697 3.52327 17.2431 3.56885 17.4482 3.77393C17.6533 3.95622 17.7102 4.28662 17.6191 4.76514Z" fill="#63BEFF"/>
                                         </svg>
@@ -537,22 +553,22 @@
                                             <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
                                         </a>
@@ -571,7 +587,7 @@
                         <li class="tariffs__item-info-item">Рівень спілкування та розуміння задач - GPT2</li>
                         <li class="tariffs__item-info-item">1 користувач</li>
                         <li class="tariffs__item-info-item">1 активний бізнес-процес</li>
-                        <a class="tariffs__item-info-more opacity" >Показати більше</a>
+                        <a class="tariffs__item-info-more opacity none" >Показати більше</a>
                     </ul>
                 </div>
             </div>
@@ -609,22 +625,22 @@
                                             <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
                                         </a>
@@ -681,22 +697,22 @@
                                             <img class="submenu__btn-img" src="images/icons/btn-telegram.png" alt="telegram">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item submenu__btn-item--off opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-viber.png" alt="viber">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item submenu__btn-item--off opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-whatsapp.png" alt="whatsapp">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item submenu__btn-item--off opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-messenger.png" alt="messenger">
                                         </a>
                                     </li>
-                                    <li class="submenu__btn-item submenu__btn-item--off">
+                                    <li class="submenu__btn-item submenu__btn-item--off opacity">
                                         <a class="submenu__btn-link" href="#">
                                             <img class="submenu__btn-img" src="images/icons/btn-slack.png" alt="slack">
                                         </a>
@@ -714,7 +730,7 @@
                         <li class="tariffs__item-info-item tariff_benefit">Рівень спілкування та розуміння задач - GPT4</li>
                         <li class="tariffs__item-info-item tariff_benefit">Керування набором навичок віртуальних співробітників</li>
                         <li class="tariffs__item-info-item tariff_benefit">Самоналагодження бізнес-процесів</li>
-                        <a class="tariffs__item-info-more opacity" >Показати більше</a>
+                        <a class="tariffs__item-info-more opacity none" >Показати більше</a>
     
                     </ul>
                 </div>
@@ -735,19 +751,19 @@
                     </div>
                     <p class="tariffs__item-connection-text">/зв'яжіться з нами</p>
                 </div>
-                <button class="tariffs__item-btn tariffs__item-connection-btn">
+                <a href="http://t.me/BizAI_support_bot" type="button" class="tariffs__item-btn tariffs__item-connection-btn">
                     Зв'яжіться для оцінки
-                </button>
+                </a>
                 </div>
                 <div class="tariffs__item-info">
-                    <h6 class="tariffs__item-info-title">Зовнішні боти як сервіс</h6>
+                    <h6 class="tariffs__item-info-title">Які особливості включає?</h6>
                     <ul class="tariffs__item-info-list">
                         <li class="tariffs__item-info-item">Зовніші боти як сервіс</li>
                         <li class="tariffs__item-info-item">Специфічні агенти</li>
                         <li class="tariffs__item-info-item">Власні правила формування контексту</li>
                         <li class="tariffs__item-info-item">Формування індивідуальної моделі ШІ</li>
                         <li class="tariffs__item-info-item">Диверсифіковані бізнеси з різним контекстом</li>
-                        <a class="tariffs__item-info-more opacity">Показати більше</a>
+                        <a class="tariffs__item-info-more opacity none">Показати більше</a>
                     </ul>              
                 </div>
             </div>
@@ -892,7 +908,7 @@
     <div class="container">
     <div class="articles__top">
         <h2 class="articles__title">Новини та статті</h2>
-        <a class="articles__more" href="#">Подивитись все</a>
+        <a class="articles__more" href="all-posts.html">Подивитись все</a>
     </div>
         <div class="articles__inner">
             <div class="articles__item">
